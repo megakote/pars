@@ -1,0 +1,2136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<yandexsearch version="1.0">
+    <request>
+        <query>test</query>
+        <page>0</page>
+        <sortby order="ascending" priority="no">tm</sortby>
+        <maxpassages></maxpassages>
+        <groupings>
+            <groupby attr="" mode="flat" groups-on-page="100" docs-in-group="1" curcateg="-1" />
+        </groupings>
+    </request>
+    <response date="20170304T104316">
+        <reqid>1488624196177127-8206059080892191896284880-sas1-1789-XML</reqid>
+        <found priority="phrase">607147526</found>
+        <found priority="strict">607147526</found>
+        <found priority="all">607147526</found>
+        <found-human>Нашлось 607 млн ответов</found-human>
+        <results>
+            <grouping attr="" mode="flat" groups-on-page="100" docs-in-group="1" curcateg="-1">
+                <found priority="phrase">423536</found>
+                <found priority="strict">423536</found>
+                <found priority="all">423536</found>
+                <found-docs priority="phrase">568187434</found-docs>
+                <found-docs priority="strict">568187434</found-docs>
+                <found-docs priority="all">568187434</found-docs>
+                <found-docs-human>нашёл 568 млн ответов</found-docs-human>
+                <page first="1" last="100">0</page>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z71FEC56EA19D559B">
+                        <relevance />
+                        <url>http://xitfilms.ru/kino/Toyota+Prius+-+%D1%82%D0%B5%D1%81%D1%82+%D0%B4%D1%80%D0%B0%D0%B9%D0%B2+%D0%B3%D0%B8%D0%B1%D1%80%D0%B8%D0%B4%D0%B0</url>
+                        <domain>xitfilms.ru</domain>
+                        <title>Toyota Prius -
+                            <hlword>тест</hlword> драйв гибрида смотреть онлайн | Бесплатные...</title>
+                        <size>1240</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>Bavariaspecial часть 1 Toyota Prius 4 hybrid тойота приус гибрид
+                                <hlword>тест</hlword>
+                                <hlword>test</hlword> testdrive обзор. Загружено 11 марта 2016.
+                                <hlword>Тест</hlword> драйв Toyota Prius.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="ZCDAA2AB01D5E49DC">
+                        <relevance />
+                        <url>http://www.fassen.net/show/%D0%9A%D1%80%D0%B0%D1%88-%D1%82%D0%B5%D1%81%D1%82+%D0%9B%D0%B0%D0%B4%D0%B0+%D0%9A%D0%B0%D0%BB%D0%B8%D0%BD%D0%B0</url>
+                        <domain>www.fassen.net</domain>
+                        <title>Краш-
+                            <hlword>тест</hlword> Лада Калина Видео! - www.fassen.net-Видео сёрфинг</title>
+                        <size>2495</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>краш
+                                <hlword>тест</hlword> калины супер бочковая пружина. lada kalina crash-
+                                <hlword>test</hlword> лада калина краш -
+                                <hlword>тест</hlword> системы безопасности.</passage>
+                            <passage>ЭКСКЛЮЗИВ: видео краш-
+                                <hlword>теста</hlword> и
+                                <hlword>тест</hlword>-драйв...</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="ZCE64621B1502A5EF">
+                        <relevance />
+                        <url>https://www.wieistmeineip.de/</url>
+                        <domain>www.wieistmeineip.de</domain>
+                        <title>Wie ist meine IP-Adresse?</title>
+                        <size>1033</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>IPv6: Ist Ihr Anschluss startklar? Ob Ihr Anschluss schon bereit für das neue Internet-Protokoll ist, zeigt dieser
+                                <hlword>Test</hlword>.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>de</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z7125C9FAE35A2711">
+                        <relevance />
+                        <url>https://www.shopify.com/</url>
+                        <domain>www.shopify.com</domain>
+                        <title>Ecommerce Software - Best Ecommerce Platform Made for You - Free...</title>
+                        <headline>We’re not just an ecommerce software, Shopify is the best ecommerce platform that has everything you need to sell online, on social media, or in person.</headline>
+                        <size>1202</size>
+                        <charset>utf-8</charset>
+                        <properties>
+                            <_PassagesType>1</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z037B2D0FB386589A">
+                        <relevance />
+                        <url>http://www.psylib.ru/test/test7.php</url>
+                        <domain>www.psylib.ru</domain>
+                        <title>
+                            <hlword>Тест</hlword> на стессоустойчивость</title>
+                        <size>452</size>
+                        <charset>windows-1251</charset>
+                        <passages>
+                            <passage>
+                                <hlword>Тест</hlword> на стрессоустойчивость. Этот
+                                <hlword>тест</hlword> служит для оценки степени раздражительности, нервозности, вспыльчивости и способности контролировать эти качества.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z6ED37A532A271A3C">
+                        <relevance />
+                        <url>http://www.nicovideo.jp/</url>
+                        <domain>www.nicovideo.jp</domain>
+                        <title>niconico</title>
+                        <headline>Translated 【Kagamine Rin】 Terminating the World 【Original MV】. Neru in All his glory...</headline>
+                        <size>1720</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>zauberstab mixer
+                                <hlword>test</hlword>.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>1</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z67BE694BB1C55B97">
+                        <relevance />
+                        <url>https://www.deezer.com/</url>
+                        <domain>www.deezer.com</domain>
+                        <title>Deezer - Flow my Music</title>
+                        <headline>Çalma listesi oluşturma, radyo kanalları gibi özelliklerle birlikte internet üzerinden yerli ve yabancı müzik dinleme hizmeti sunuyor.</headline>
+                        <size>355</size>
+                        <charset>utf-8</charset>
+                        <properties>
+                            <_PassagesType>1</_PassagesType>
+                            <lang>tr</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z83DADD0411B69740">
+                        <relevance />
+                        <url>https://auto.ria.com/news/test-drive/231669/test-drajv-mazda3.html</url>
+                        <domain>auto.ria.com</domain>
+                        <title>
+                            <hlword>Тест</hlword>-драйв Mazda3 - AUTO.RIA</title>
+                        <headline>Вот уже три поколения подряд Mazda 3 преуспевает в борьбе за сердца и кошельки публики, всерьез претендуя на первые строчки европейских хит-парадов.</headline>
+                        <size>2078</size>
+                        <charset>utf-8</charset>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z1246D74A6BAAD54C">
+                        <relevance />
+                        <url>http://gademoleech.biz/</url>
+                        <domain>gademoleech.biz</domain>
+                        <title>GademoLeech Cbox</title>
+                        <headline>Владелец сайта предпочёл скрыть описание страницы.</headline>
+                        <size>0</size>
+                        <charset>windows-1251</charset>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z6C87C74C59D9D845">
+                        <relevance />
+                        <url>http://www.supertangas.com/</url>
+                        <domain>www.supertangas.com</domain>
+                        <title>SUPERTANGAS.com - Los mejores TANGAS de la red</title>
+                        <headline>Владелец сайта предпочёл скрыть описание страницы.</headline>
+                        <size>0</size>
+                        <charset>windows-1251</charset>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z5CDBF71785714AB9">
+                        <relevance />
+                        <url>http://turbobit.net/x.html</url>
+                        <domain>turbobit.net</domain>
+                        <title>Turbobit.net | Безлимитное и быстрое облако файлов</title>
+                        <headline>Стоимость услуги для абонентов ПАО «МТС» составляет 20,32 рублей с НДС за 1 календарный день. С порядком списания стоимости услуги можно ознакомиться на сайте ПАО «МТС»...</headline>
+                        <size>699</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>
+                                <hlword>Test</hlword> Drive Unlimited %100 Save Dosyası indir.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>1</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="ZB5715EB1258E2EAE">
+                        <relevance />
+                        <url>http://www.gelbeseiten.de/</url>
+                        <domain>www.gelbeseiten.de</domain>
+                        <title>Gelbe Seiten</title>
+                        <headline>Gelbe Seiten - Das Branchenbuch für Deutschland gibt Auskunft zu Telefonnummern, Adressen, Faxnummern und Firmen-Infos in den Einträgen der Unternehmen nach Branchen - mit Karte...</headline>
+                        <size>1825</size>
+                        <charset>windows-1252</charset>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>de</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z74D57DC7AC2985A7">
+                        <relevance />
+                        <url>http://www.catch22.net/software/hexedit</url>
+                        <domain>www.catch22.net</domain>
+                        <title>HexEdit 2.0 | Catch22</title>
+                        <headline>HexEdit is a hexadecimal file editor for Microsoft Windows. HexEdit allows the user to view and edit any type of file, no matter what format it is saved in. With a maximum file size limit of 16Exabytes (17,179...</headline>
+                        <size>547</size>
+                        <charset>utf-8</charset>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z2B879BBB36569DEB">
+                        <relevance />
+                        <url>https://www.ozspeedtest.com/</url>
+                        <domain>www.ozspeedtest.com</domain>
+                        <title>Speed
+                            <hlword>Test</hlword> - Home - Oz Broadband Speed
+                            <hlword>Test</hlword>
+                        </title>
+                        <size>867</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>
+                                <hlword>Test</hlword> both download speed and upload speed of your Internet connection, whether it be Dialup, ADSL, ADSL2, ADSL2+, Cable, 3G, 4G, Wireless or Satellite.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z0B9E8AF2A4AF1A13">
+                        <relevance />
+                        <url>http://www.test-my-cam.com/</url>
+                        <domain>www.test-my-cam.com</domain>
+                        <title>
+                            <hlword>test</hlword>-my-cam.com</title>
+                        <size>0</size>
+                        <charset>windows-1251</charset>
+                        <passages>
+                            <passage>
+                                <hlword>Test</hlword> My Camera.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>1</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z3126FD232CD6710E">
+                        <relevance />
+                        <url>http://www.mensa.org/</url>
+                        <domain>www.mensa.org</domain>
+                        <title>What is Mensa? | Mensa International</title>
+                        <size>625</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>In some countries, a pre-
+                                <hlword>test</hlword> is available which you can take in the privacy of your home. To find out whether such a
+                                <hlword>test</hlword> is available in your country, please see National Groups.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="ZC2A8496D1612899E">
+                        <relevance />
+                        <url>http://www.wikihow.com/</url>
+                        <domain>www.wikihow.com</domain>
+                        <title>wikiHow - How to do anything</title>
+                        <headline>Learn how to do anything with wikiHow, the world's most popular how-to website. Easy, step-by-step, illustrated instructions for everything.</headline>
+                        <size>1183</size>
+                        <charset>utf-8</charset>
+                        <properties>
+                            <_PassagesType>1</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z60D67CBE8DE851CE">
+                        <relevance />
+                        <url>http://testdrive2017.ru/test-drajv-hyundai-solaris-2017-ot-drive-ru/</url>
+                        <domain>testdrive2017.ru</domain>
+                        <title>
+                            <hlword>Тест</hlword>-драйв Hyundai Solaris 2017 от DRIVE.RU | Видео |
+                            <hlword>Тест</hlword>-Драйв...</title>
+                        <size>771</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>
+                                <hlword>Тест</hlword>-драйв УАЗ Патриот 2017 от АвтоРевю.
+                                <hlword>Тест</hlword>-драйв Kia Soul GT 2017 от DRIVE.RU. Обзор Jeep Compass 2017 от Autonovelties.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z0B0BD9ECCC1EADBA">
+                        <relevance />
+                        <url>http://test.anno-online.com/</url>
+                        <domain>test.anno-online.com</domain>
+                        <title>
+                            <hlword>test</hlword>.anno-online.com</title>
+                        <size>0</size>
+                        <charset>windows-1251</charset>
+                        <passages>
+                            <passage>International
+                                <hlword>Testing</hlword> Server.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>1</_PassagesType>
+                            <lang>mis</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z5BE98D4762755ECD">
+                        <relevance />
+                        <url>http://TestDrive2016.ru/volkswagen/vw-passat-variant-b8-2016-test-ot-bolshogo-test-drajva/</url>
+                        <domain>TestDrive2016.ru</domain>
+                        <title>VW PASSAT VARIANT B8 2016:
+                            <hlword>тест</hlword> от Большого
+                            <hlword>тест</hlword>-драйва</title>
+                        <size>1740</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>Volkswagen Passat 2016 и Lexus ES200 2016: сравнительный
+                                <hlword>тест</hlword> от AutompsTV. VW POLO SEDAN GT 2016:
+                                <hlword>тест</hlword> от Большого
+                                <hlword>тест</hlword>-драйва.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z499C09532643CC52">
+                        <relevance />
+                        <url>http://www.google.es/</url>
+                        <domain>www.google.es</domain>
+                        <title>Google</title>
+                        <headline>Google'la Reklam Fırsatları Google Hakkında Google.com.</headline>
+                        <size>211</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>redondofelix
+                                <hlword>testing</hlword>.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>1</_PassagesType>
+                            <lang>tr</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z5AA95C8A77DDCF01">
+                        <relevance />
+                        <url>https://onlinetestpad.com/</url>
+                        <domain>onlinetestpad.com</domain>
+                        <title>onlinetestpad.com</title>
+                        <size>0</size>
+                        <charset>windows-1251</charset>
+                        <passages>
+                            <passage>Online
+                                <hlword>Test</hlword> Pad - Онлайн
+                                <hlword>тесты</hlword> и кроссворды.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>1</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z7EE381ED88BABCE7">
+                        <relevance />
+                        <url>http://www.englishlearner.com/tests/</url>
+                        <domain>www.englishlearner.com</domain>
+                        <title>English lessons online: EnglishLearner.com | Intermediate reading
+                            <hlword>tests</hlword>
+                        </title>
+                        <size>1984</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>Intermediate reading
+                                <hlword>tests</hlword>: Hot dog eating champion - a multiple choice
+                                <hlword>test</hlword>. Cloze
+                                <hlword>test</hlword> 1 - complete the text with the given words; a banked cloze exercise.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="ZFDD6B1C97265E383">
+                        <relevance />
+                        <url>http://dict.leo.org/</url>
+                        <domain>dict.leo.org</domain>
+                        <title>Englisch Deutsch Wörterbuch - leo.org: Startseite</title>
+                        <headline>LEO.org: Ihr Wörterbuch im Internet für Englisch-Deutsch Übersetzungen, mit Forum, Vokabeltrainer und Sprachkursen. Im Web und als APP.</headline>
+                        <size>1422</size>
+                        <charset>utf-8</charset>
+                        <properties>
+                            <_PassagesType>1</_PassagesType>
+                            <lang>de</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="ZDD69D9E6B57E7945">
+                        <relevance />
+                        <url>http://www.whoishostingthis.com/</url>
+                        <domain>www.whoishostingthis.com</domain>
+                        <title>Web Hosting Search Tool, Reviews &amp; More at WhoIsHostingThis.com</title>
+                        <headline>Discover which web hosting any web site uses, plus hosting reviews, comparison, coupons, buyers guides and more.</headline>
+                        <size>1935</size>
+                        <charset>utf-8</charset>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="ZE86F50B02A580231">
+                        <relevance />
+                        <url>http://test-my-cam.com/</url>
+                        <domain>test-my-cam.com</domain>
+                        <title>
+                            <hlword>test</hlword>-my-cam.com</title>
+                        <headline>Владелец сайта предпочёл скрыть описание страницы.</headline>
+                        <size>0</size>
+                        <charset>windows-1251</charset>
+                        <properties>
+                            <_PassagesType>1</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z70799CBD058FAFC5">
+                        <relevance />
+                        <url>http://TestDrive2016.ru/hyundai/hyundai-grand-santa-fe-2016-test-ot-bolshogo-test-drajva/</url>
+                        <domain>TestDrive2016.ru</domain>
+                        <title>HYUNDAI GRAND SANTA FE 2016:
+                            <hlword>тест</hlword> от Большого
+                            <hlword>тест</hlword>-драйва</title>
+                        <size>1733</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>Смотрите новые видео
+                                <hlword>тесты</hlword> автомобилей у нас!</passage>
+                            <passage>Hyundai Santa Fe Premium 2016.
+                                <hlword>Тест</hlword> драйв Хендай Санта Фе Премиум от Clickoncar.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="ZA4E9D56BEF2CB075">
+                        <relevance />
+                        <url>http://www.themalaysianinsider.com/</url>
+                        <domain>www.themalaysianinsider.com</domain>
+                        <title>The Malaysian Insider</title>
+                        <headline>It has come to our notice that a webpage (URL http://www.malaysia-insider.asia/) has emerged announcing what is purportedly a re-launch of The Malaysian Insider by midnight of 17 August 2016.</headline>
+                        <size>152</size>
+                        <charset>windows-1252</charset>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z678756ACE706913A">
+                        <relevance />
+                        <url>http://animeindo.web.id/</url>
+                        <domain>animeindo.web.id</domain>
+                        <title>1. Animeindo.web.id</title>
+                        <headline>Владелец сайта предпочёл скрыть описание страницы.</headline>
+                        <size>0</size>
+                        <charset>windows-1251</charset>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>id</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z6B499C8860B2D552">
+                        <relevance />
+                        <url>http://www.answers.com/</url>
+                        <domain>www.answers.com</domain>
+                        <title>Answers - The Most Trusted Place for Answering Life's Questions</title>
+                        <headline>Answers.com is the place to go to get the answers you need and to ask the questions you want...</headline>
+                        <size>2638</size>
+                        <charset>utf-8</charset>
+                        <properties>
+                            <_PassagesType>1</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z6FA4D30C0431B15D">
+                        <relevance />
+                        <url>http://BeOn.ru/</url>
+                        <domain>BeOn.ru</domain>
+                        <title>BeOn Гость</title>
+                        <size>2222</size>
+                        <charset>windows-1251</charset>
+                        <passages>
+                            <passage>­
+                                <hlword>Тест</hlword>: •Маша и Медведь•Бездомный Бог• •3•. Ты сидишь на кровате и поедаешь чипсы. Громкий хруст разносится по комнате, что немного заглушает звук, исходящий из телвизора.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z17B3793F26B1B8BC">
+                        <relevance />
+                        <url>http://rainmeter.net/</url>
+                        <domain>rainmeter.net</domain>
+                        <title>Rainmeter – desktop customization tool</title>
+                        <headline>Владелец сайта предпочёл скрыть описание страницы.</headline>
+                        <size>0</size>
+                        <charset>windows-1251</charset>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z0C468009685876F1">
+                        <relevance />
+                        <url>http://speedtest.spb.yota.ru/</url>
+                        <domain>speedtest.spb.yota.ru</domain>
+                        <title>Yota Speed
+                            <hlword>Test</hlword>
+                        </title>
+                        <size>0</size>
+                        <charset>windows-1251</charset>
+                        <passages>
+                            <passage>
+                                <hlword>Тест</hlword> - Измерение скорости интернет соединения.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>1</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z32E551AE43955837">
+                        <relevance />
+                        <url>https://openvpn.net/</url>
+                        <domain>openvpn.net</domain>
+                        <title>OpenVPN - Open Source VPN</title>
+                        <headline>SSL/TLS based user-space VPN. Supports Linux, Solaris, OpenBSD, FreeBSD, NetBSD, Mac OS X, and Windows 2000/XP.</headline>
+                        <size>219</size>
+                        <charset>utf-8</charset>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="ZC7AC764A4ECE59E1">
+                        <relevance />
+                        <url>http://www.amurasia.ru/cache/nikolskiy/gdz-po-matematike-6-klass-test-2-chast-grishina.html</url>
+                        <domain>www.amurasia.ru</domain>
+                        <title>Гдз по математике 6 класс
+                            <hlword>тест</hlword> 2 часть гришина - решебник...</title>
+                        <size>1119</size>
+                        <charset>windows-1251</charset>
+                        <passages>
+                            <passage>Гдз Русский Язык
+                                <hlword>Тесты</hlword> Часть 1 Книгина 5 Класс. Проведение различных торгово-посреднических и комиссионных операций.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z9B3766AA6C63B8C7">
+                        <relevance />
+                        <url>https://www.adme.ru/svoboda-psihologiya/test-vstavte-propuschennuyu-bukvu-i-my-skazhem-chego-vam-ne-hvataet-v-zhizni-1464215/comments/</url>
+                        <domain>www.adme.ru</domain>
+                        <title>Комментарии к статье:
+                            <hlword>Тест</hlword>: Вставьте пропущенную букву...</title>
+                        <size>5687</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>
+                                <hlword>Тест</hlword>: Вставьте пропущенную букву, и мы скажем, чего вам не хватает в жизни.</passage>
+                            <passage>Взломай систему! Ответь на
+                                <hlword>тест</hlword> отсутствующим вариантом!</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="ZE40F0E44F958C318">
+                        <relevance />
+                        <url>http://speedtest.msk.yota.ru/</url>
+                        <domain>speedtest.msk.yota.ru</domain>
+                        <title>speedtest.msk.yota.ru</title>
+                        <size>0</size>
+                        <charset>windows-1251</charset>
+                        <passages>
+                            <passage>жми на Begin
+                                <hlword>Test</hlword> (.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>1</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z54EC930943486209">
+                        <relevance />
+                        <url>https://klout.com/</url>
+                        <domain>klout.com</domain>
+                        <title>Klout | Be Known For What You Love</title>
+                        <headline>Владелец сайта предпочёл скрыть описание страницы.</headline>
+                        <size>0</size>
+                        <charset>windows-1251</charset>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="ZB3D875CDE2DE2868">
+                        <relevance />
+                        <url>http://tap.uz/search?q=fizika%20fanidan%20olimpiada%20test%20savollari&amp;number=20</url>
+                        <domain>tap.uz</domain>
+                        <title>fizika fanidan olimpiada
+                            <hlword>test</hlword> savollari Поиск по УзНету</title>
+                        <size>907</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>9-синфлар учун физика фанидан
+                                <hlword>тест</hlword> саволлари 4-чорак.</passage>
+                            <passage>MATEMATIKA FANIDAN
+                                <hlword>TEST</hlword> SAVOLLARI 2-VARIANT · Ona tilidan 10-sinflar uchun
+                                <hlword>test</hlword> 2 · Ona ...</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z47589C2B75DDC46C">
+                        <relevance />
+                        <url>http://mystart.incredimail.com/</url>
+                        <domain>mystart.incredimail.com</domain>
+                        <title>MyStart by IncrediMail.com</title>
+                        <headline>Владелец сайта предпочёл скрыть описание страницы.</headline>
+                        <size>0</size>
+                        <charset>windows-1251</charset>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z60A0C863FD574850">
+                        <relevance />
+                        <url>https://irecommend.ru/content/bystryi-i-nadezhnyi-test-na-beremennost-foto-video-instruktsiya</url>
+                        <domain>irecommend.ru</domain>
+                        <title>
+                            <hlword>Тесты</hlword> на беременность BIOLA Би-
+                            <hlword>тест</hlword> budget
+                            <hlword>тест</hlword>-полоска...</title>
+                        <size>1274</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>Ишимова рекомендует
+                                <hlword>Тесты</hlword> на беременность BIOLA Би-
+                                <hlword>тест</hlword> budget
+                                <hlword>тест</hlword>-полоска для определения беременности.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z22C306379B7A620F">
+                        <relevance />
+                        <url>http://pc.shopping2.naver.com/</url>
+                        <domain>pc.shopping2.naver.com</domain>
+                        <title>pc.shopping2.naver.com</title>
+                        <headline>Владелец сайта предпочёл скрыть описание страницы.</headline>
+                        <size>0</size>
+                        <charset>windows-1251</charset>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>ko</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z2B1943329E5C3DE2">
+                        <relevance />
+                        <url>http://pikabu.ru/story/vyishel_steamvr_performance_test_4015170</url>
+                        <domain>pikabu.ru</domain>
+                        <title>Вышел SteamVR Performance
+                            <hlword>Test</hlword> | Пикабу</title>
+                        <size>932</size>
+                        <charset>windows-1251</charset>
+                        <passages>
+                            <passage>Valve выпустили инструмент измерения производительности железа для Steam VR. Это та самая демка со сломанными роботами Атласом и Пи-Боди. Установить SteamVR Performance
+                                <hlword>Test</hlword>...</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z0ED6B30DF4A5E68A">
+                        <relevance />
+                        <url>http://sports.news.naver.com/</url>
+                        <domain>sports.news.naver.com</domain>
+                        <title>sports.news.naver.com</title>
+                        <headline>Владелец сайта предпочёл скрыть описание страницы.</headline>
+                        <size>0</size>
+                        <charset>windows-1251</charset>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>ko</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="ZF8DB15D641280ADC">
+                        <relevance />
+                        <url>http://www.beaute-test.com/</url>
+                        <domain>www.beaute-test.com</domain>
+                        <title>Beauté-
+                            <hlword>test</hlword>.com : Guide d'achat produits de beauté et cosmétiques</title>
+                        <size>102</size>
+                        <charset>windows-1252</charset>
+                        <passages>
+                            <passage>Notre système de protection a détecté que cet accès n'est pas autorisé. Si vous pensez qu'il s'agit d'une erreur, merci de nous le signaler en envoyant un mail à webmaster {à} beaute-
+                                <hlword>test</hlword>.com.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>fr</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="ZF0099EB5D9B88D45">
+                        <relevance />
+                        <url>http://matcreative.ru/itogovyy-test-po-matematike-za-7-klass</url>
+                        <domain>matcreative.ru</domain>
+                        <title>Итоговый
+                            <hlword>тест</hlword> по математике за 7 класс.</title>
+                        <size>630</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>Ученикам→
+                                <hlword>Тесты</hlword>. Итоговый
+                                <hlword>тест</hlword> по математике за 7 класс. Какое из утверждений является верным?</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z35A81F1D0C828C4E">
+                        <relevance />
+                        <url>https://www.utest.com/</url>
+                        <domain>www.utest.com</domain>
+                        <title>Bug Battle</title>
+                        <size>44</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>
+                                <hlword>test</hlword> the app in-the-wild.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>1</_PassagesType>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z9948491A83BB1E0F">
+                        <relevance />
+                        <url>http://finance.naver.com/</url>
+                        <domain>finance.naver.com</domain>
+                        <title>Naver Finance</title>
+                        <headline>Владелец сайта предпочёл скрыть описание страницы.</headline>
+                        <size>0</size>
+                        <charset>windows-1251</charset>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>ko</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z68EFCE579E9A084D">
+                        <relevance />
+                        <url>https://www.usertesting.com/</url>
+                        <domain>www.usertesting.com</domain>
+                        <title>UserTesting | User Experience Research Platform</title>
+                        <headline>An online usability
+                            <hlword>testing</hlword> tool that allows to get videos of real people speaking their thoughts as they use websites, mobile apps and prototypes.</headline>
+                        <size>1391</size>
+                        <charset>utf-8</charset>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z482711D73D8800CE">
+                        <relevance />
+                        <url>http://test.i-exam.ru/</url>
+                        <domain>test.i-exam.ru</domain>
+                        <title>
+                            <hlword>test</hlword>.i-exam.ru</title>
+                        <size>0</size>
+                        <charset>windows-1251</charset>
+                        <passages>
+                            <passage>://
+                                <hlword>test</hlword>.i-exam.ru.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>1</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="ZC32BEEB48EF63023">
+                        <relevance />
+                        <url>http://www.myersbriggs.org/my-mbti-personality-type/mbti-basics/</url>
+                        <domain>www.myersbriggs.org</domain>
+                        <title>The Myers &amp; Briggs Foundation - MBTI® Basics</title>
+                        <size>1383</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>The MBTI tool is different from many other psychological instruments and also different from other personality
+                                <hlword>tests</hlword>.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z801374CCFD45616F">
+                        <relevance />
+                        <url>http://www.v-soul.com/</url>
+                        <domain>www.v-soul.com</domain>
+                        <title>Canadian Citizenship Practice
+                            <hlword>Test</hlword> 2017</title>
+                        <size>398</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>Best Free online Canadian citizenship practice
+                                <hlword>test</hlword>(Discover Canada), real
+                                <hlword>test</hlword> paper questions and answers practice, iphone app for Canada citizen applicants to prepare for Ontario, Alberta...</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="ZF310290C5BF65CE6">
+                        <relevance />
+                        <url>http://vike.uhyb.rock-n-roll.ru/test-po-matematike-v-6-klasse-po-teme-otnosheniya-i-proportsii-skachat-docx-1258.html</url>
+                        <domain>vike.uhyb.rock-n-roll.ru</domain>
+                        <title>
+                            <hlword>тест</hlword> по математике в 6 классе по теме отношения и пропорции docx</title>
+                        <size>838</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>Размер. itogovyy_
+                                <hlword>test</hlword> _otnosheniya_i_proporciya.docx. Предварительный просмотр: Итоговый
+                                <hlword>тест</hlword> по теме : « Отношения и пропорция ».</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="ZE35CFAFA46615720">
+                        <relevance />
+                        <url>http://www.assessment.com/</url>
+                        <domain>www.assessment.com</domain>
+                        <title>Assessment.com - Validity
+                            <hlword>Tested</hlword>
+                        </title>
+                        <size>1093</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>Our career
+                                <hlword>test</hlword> is perfect if you’re feeling burned out or are unsatisfied in your current job. First, start by taking the free online career
+                                <hlword>test</hlword>...</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z03098E1CAD82FF39">
+                        <relevance />
+                        <url>http://fishki.net/2221525-test-dlja-teh-kto-privyk-kushaty-pered-snom.html</url>
+                        <domain>fishki.net</domain>
+                        <title>
+                            <hlword>Тест</hlword> для тех, кто привык кушать перед сном</title>
+                        <size>6964</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>Тогда пройдите этот
+                                <hlword>тест</hlword>. Будете приятно удивлены. А может и нет </passage>
+                            <passage>поделиться 120 ещё пост.
+                                <hlword>Тест</hlword> для тех, кто привык кушать перед сном.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z5B48C4E118E2238A">
+                        <relevance />
+                        <url>https://www.overclockers.ru/lab/81965/test-aktualnyh-sistem-v-igrah-call-of-duty-infinite-warfare-call-of-duty-black-ops-iii-i-call-of-duty-advanced-warfare.html</url>
+                        <domain>www.overclockers.ru</domain>
+                        <title>
+                            <hlword>Тест</hlword> актуальных систем в играх Call of Duty... :: Overclockers.ru</title>
+                        <size>3258</size>
+                        <charset>windows-1251</charset>
+                        <passages>
+                            <passage>Перейдем непосредственно к
+                                <hlword>тестам</hlword>. Результаты
+                                <hlword>тестов</hlword>: сравнение производительности. Call of Duty: Advanced Warfare (Трафик).</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z8971817D5F6A6239">
+                        <relevance />
+                        <url>http://niku.uhyb.rock-n-roll.ru/test-po-russkomu-yazyku-4-klass-po-teme-test-po-russkomu-yazyku-4-klass-2403.html</url>
+                        <domain>niku.uhyb.rock-n-roll.ru</domain>
+                        <title>
+                            <hlword>тест</hlword> по русскому языку 4 класс по теме
+                            <hlword>тест</hlword> по русскому языку...</title>
+                        <size>948</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>Тестирование онлайн · Большой
+                                <hlword>тест</hlword> для новичков; 4-й класс: блиц-
+                                <hlword>тесты</hlword> ....</passage>
+                            <passage>4 класс.
+                                <hlword>Тест</hlword> по русскому языку «Словарные слова» ( 10 вопросов).</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z033519500D3F5E13">
+                        <relevance />
+                        <url>http://www.lovetest.com/</url>
+                        <domain>www.lovetest.com</domain>
+                        <title>Love
+                            <hlword>Test</hlword> | LoveTest Calculator &amp; Personality Quizzes since 1996</title>
+                        <headline>Get romantic advice and tips based on the answers to your love
+                            <hlword>test</hlword>.</headline>
+                        <size>978</size>
+                        <charset>utf-8</charset>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z4C0996A2A78CE553">
+                        <relevance />
+                        <url>http://www.gratis-lagump3.com/</url>
+                        <domain>www.gratis-lagump3.com</domain>
+                        <title>Gratis lagu MP3 download musik indonesia 2014</title>
+                        <headline>Владелец сайта предпочёл скрыть описание страницы.</headline>
+                        <size>0</size>
+                        <charset>windows-1251</charset>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>id</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="ZD7975D96E2FA0DC1">
+                        <relevance />
+                        <url>https://www.4tests.com/sat</url>
+                        <domain>www.4tests.com</domain>
+                        <title>4
+                            <hlword>Tests</hlword>.com - Free, Practice SAT Exam</title>
+                        <size>1415</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>Great news! We've got another practice
+                                <hlword>test</hlword> with all new questions for you after this one. Take another free, practice SAT Exam!</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z5D441FE921EDF590">
+                        <relevance />
+                        <url>http://niku.uhyb.rock-n-roll.ru/test-po-teme-odnorodnye-chleny-predlozheniya-onlayn-test-1710.html</url>
+                        <domain>niku.uhyb.rock-n-roll.ru</domain>
+                        <title>
+                            <hlword>тест</hlword> по теме однородные члены предложения онлайн
+                            <hlword>тест</hlword> 17...</title>
+                        <size>737</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>
+                                <hlword>Тест</hlword> «Однородные члены предложения» (13 вопросов).12 правильных ответов из 13 Ваш уровень знаний по теме составляет 92.31% Ни чё се тестик легкй!</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z0D2C1DB7145D3BF4">
+                        <relevance />
+                        <url>http://niku.uhyb.rock-n-roll.ru/test-test-prover-sebya-russkiy-yazyk-5-klass-2562.html</url>
+                        <domain>niku.uhyb.rock-n-roll.ru</domain>
+                        <title>
+                            <hlword>тест</hlword>
+                            <hlword>тест</hlword> проверь себя русский язык 5 класс 17 февраля 2017 года...</title>
+                        <size>1028</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>
+                                <hlword>Тесты</hlword> по русскому языку 5 класс.
+                                <hlword>тест</hlword>
+                                <hlword>тест</hlword> проверь себя русский язык 5 класс </passage>
+                            <passage>
+                                <hlword>Тест</hlword> не требует специальных математических знаний.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z5D859898B2AB49E3">
+                        <relevance />
+                        <url>https://www.rambler.ru/</url>
+                        <domain>www.rambler.ru</domain>
+                        <title>Рамблер - медийный портал</title>
+                        <headline>Новости России и мира. Электронная почта. Поиск информации в интернете. Развлекательные и коммуникационные сервисы. Программы и приложения.</headline>
+                        <size>873</size>
+                        <charset>utf-8</charset>
+                        <properties>
+                            <_PassagesType>1</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="ZDF56C60B3CFC9309">
+                        <relevance />
+                        <url>http://diabet-test.com.ua/p95852928-test-poloski-akku.html</url>
+                        <domain>diabet-test.com.ua</domain>
+                        <title>Купить
+                            <hlword>Тест</hlword>-полоски &quot;Акку-Чек Перформа&quot; № 50 в Украине...</title>
+                        <size>1126</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>
+                                <hlword>Тест</hlword>-полоски &quot;Акку-Чек Перформа&quot; № 50. Поиск товаров и услуг.</passage>
+                            <passage>diabet-
+                                <hlword>test</hlword>@ukr.net. Написать нам. График работы.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z5F1E260FBE78677D">
+                        <relevance />
+                        <url>http://www.speedtest.com/</url>
+                        <domain>www.speedtest.com</domain>
+                        <title>speedtest.com: The Leading Speed
+                            <hlword>Test</hlword> Site on the Net</title>
+                        <size>0</size>
+                        <charset>windows-1251</charset>
+                        <passages>
+                            <passage>check it with a speed
+                                <hlword>test</hlword>.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>1</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="ZE37EE307D08FBA5D">
+                        <relevance />
+                        <url>http://e28-forum.ru/test-drajv-shevrole-kruz-1-6-mehanika-video-2014.html</url>
+                        <domain>e28-forum.ru</domain>
+                        <title>
+                            <hlword>тест</hlword> драйв шевроле круз 1 6 механика видео 2014</title>
+                        <size>573</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>Обзор и
+                                <hlword>тест</hlword>-драйв Шевроле Круз в комплектации LS.</passage>
+                            <passage>Chevrolet Cruze - Большой
+                                <hlword>тест</hlword>-драйв (видеоверсия) / Big
+                                <hlword>Test</hlword> Drive - Шевроле Круз.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z6F6DEADADD8C3420">
+                        <relevance />
+                        <url>http://test.oyunuburada.com/</url>
+                        <domain>test.oyunuburada.com</domain>
+                        <title>
+                            <hlword>test</hlword>.oyunuburada.com</title>
+                        <size>0</size>
+                        <charset>windows-1251</charset>
+                        <passages>
+                            <passage>
+                                <hlword>TEST</hlword> OYUNU Burada Oynanır -
+                                <hlword>Test</hlword> OyunlarıTest oyunları kategorimizde iron...</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>1</_PassagesType>
+                            <lang>tr</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z3E6F823EBA441948">
+                        <relevance />
+                        <url>http://www.examenglish.com/IELTS/</url>
+                        <domain>www.examenglish.com</domain>
+                        <title>IELTS - the International English Language
+                            <hlword>Testing</hlword>... - Exam English</title>
+                        <size>815</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>What is the IELTS
+                                <hlword>test</hlword> like? You can choose between the Academic or General Training versions of the
+                                <hlword>test</hlword>. All candidates do the same Listening and Speaking sections.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z6E42BC21B604F88A">
+                        <relevance />
+                        <url>http://www.kolesa.ru/test-drive/hroniki-vzrosleniya-pervyj-test-hyundai-solaris-vtorogo-pokoleniya</url>
+                        <domain>www.kolesa.ru</domain>
+                        <title>Первый
+                            <hlword>тест</hlword>-драйв Hyundai Solaris второго поколения - Колеса.ру</title>
+                        <size>5531</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>Главная
+                                <hlword>Тест</hlword>-драйвы Одиночные Хроники взросления: первый
+                                <hlword>тест</hlword>-драйв Hyundai Solaris второго поколения.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z64EA42A583179FC3">
+                        <relevance />
+                        <url>http://test.novyurok.ru/</url>
+                        <domain>test.novyurok.ru</domain>
+                        <title>
+                            <hlword>test</hlword>.novyurok.ru</title>
+                        <size>0</size>
+                        <charset>windows-1251</charset>
+                        <passages>
+                            <passage>Здесь можно пройти
+                                <hlword>тест</hlword>.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>1</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z49FED12156670904">
+                        <relevance />
+                        <url>http://www.hellomagazine.com/</url>
+                        <domain>www.hellomagazine.com</domain>
+                        <title>Latest Celebrity News &amp; Royal Updates. Daily Headlines &amp; Exclusives</title>
+                        <size>3928</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>Oprah Winfrey may not have wanted to have children of her own, but that hasn't stopped... Ant and Dec tease each other during hilarious 'BFF
+                                <hlword>test</hlword>'.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="ZEFE88EBA222631B9">
+                        <relevance />
+                        <url>http://www.7-zip.org/download.html</url>
+                        <domain>www.7-zip.org</domain>
+                        <title>Download</title>
+                        <headline>Download 7-Zip 16.04 (2016-10-04) for Windows: Link. Type. Windows. Description. Download. .exe. 32-bit x86. 7-Zip for 32-bit Windows. Download. .exe. 64-bit x64. 7-Zip for 64-bit Windows x64 (Intel...</headline>
+                        <size>685</size>
+                        <charset>utf-8</charset>
+                        <properties>
+                            <_PassagesType>1</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z720C878A28227E88">
+                        <relevance />
+                        <url>https://soundcloud.com/</url>
+                        <domain>soundcloud.com</domain>
+                        <title>SoundCloud – Hear the world’s sounds</title>
+                        <headline>An audio platform that enables sound creators to upload, record, promote and share their originally-created sounds...</headline>
+                        <size>147</size>
+                        <charset>utf-8</charset>
+                        <properties>
+                            <_PassagesType>1</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z795AB18F116BD62B">
+                        <relevance />
+                        <url>http://www.privacyware.com/personal_firewall.html</url>
+                        <domain>www.privacyware.com</domain>
+                        <title>privacyware.com/personal_firewall.html</title>
+                        <headline>Privacyware - Advanced Threat Prevention and Security Intelligence Solutions...</headline>
+                        <size>986</size>
+                        <charset>windows-1252</charset>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="ZD79DB9DDE99C99AD">
+                        <relevance />
+                        <url>http://renault.autoportal.ua/newcars/renault-sandero-stepway-2012/test-drives/8241.html</url>
+                        <domain>renault.autoportal.ua</domain>
+                        <title>
+                            <hlword>Тест</hlword> Renault Sandero Stepway: проверка боем и реальный краш-
+                            <hlword>тест</hlword>
+                        </title>
+                        <size>2052</size>
+                        <charset>windows-1251</charset>
+                        <passages>
+                            <passage>Как показал незапланированный краш-
+                                <hlword>тест</hlword>, в новом Stepway действительно улучшена жесткость кузова... об этом нам рассказывали перед началом
+                                <hlword>тест</hlword>-драйва.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="ZED50CACB5BFF7C38">
+                        <relevance />
+                        <url>http://speedtest.com/</url>
+                        <domain>speedtest.com</domain>
+                        <title>Visit Website</title>
+                        <size>0</size>
+                        <charset>windows-1251</charset>
+                        <passages>
+                            <passage>The Best Place To Find speed
+                                <hlword>test</hlword>.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>1</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="ZF5DCBFA3B159DE8A">
+                        <relevance />
+                        <url>https://www.speakeasy.net/speedtest/</url>
+                        <domain>www.speakeasy.net</domain>
+                        <title>Speakeasy Speed
+                            <hlword>Test</hlword> - Powered by MegaPath | MegaPath</title>
+                        <size>3390</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>How Does our Speed
+                                <hlword>Test</hlword> Work? The Speakeasy Speed
+                                <hlword>Test</hlword> checks your connection’s download and upload speeds from within your browser.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z705766DC23D5CA72">
+                        <relevance />
+                        <url>http://gamegpu.com/rts-/-%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%B5%D0%B3%D0%B8%D0%B8/halo-wars-2-test-gpu</url>
+                        <domain>gamegpu.com</domain>
+                        <title>Halo Wars 2
+                            <hlword>тест</hlword> GPU | RTS / Стратегии |
+                            <hlword>Тест</hlword> GPU</title>
+                        <size>4176</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>For Honor
+                                <hlword>тест</hlword> GPU (обновлён с релизной версией).</passage>
+                            <passage>особенно на фоне результатов в бета версии gamegpu.com/images/stories/
+                                <hlword>Test</hlword>_GPU/strategy/Halo_Wars_2_Blitz_Beta/Halo_Wars_2...</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z402EF93773A19F8E">
+                        <relevance />
+                        <url>https://techcrunch.com/</url>
+                        <domain>techcrunch.com</domain>
+                        <title>«TechCrunch» — блог об интернете</title>
+                        <headline>Новости интернет-сервисов и компаний, обзоры отраслевых мероприятий и новинок. (на англ. яз.)</headline>
+                        <size>6241</size>
+                        <charset>utf-8</charset>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z5A1ED1EE1047E141">
+                        <relevance />
+                        <url>https://www.autocentre.ua/new/test-drive/test-drajv-skoda-kodiaq-novyj-put-342587.html</url>
+                        <domain>www.autocentre.ua</domain>
+                        <title>
+                            <hlword>Тест</hlword>-драйв Skoda Kodiaq. Новый путь - Автоцентр.ua</title>
+                        <size>3341</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>Все Видео Отзывы Сравнительный
+                                <hlword>тест</hlword>
+                                <hlword>Тест</hlword>-драйв У нас на
+                                <hlword>тесте</hlword>.</passage>
+                            <passage>Ford Mustang стал лучшим купе 2017 года в Украине.
+                                <hlword>Тест</hlword>-драйв.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z19D41489DA0961A4">
+                        <relevance />
+                        <url>http://speedtest.ofca.gov.hk/</url>
+                        <domain>speedtest.ofca.gov.hk</domain>
+                        <title>OFCA Broadband Performance
+                            <hlword>Test</hlword>
+                        </title>
+                        <size>0</size>
+                        <charset>windows-1251</charset>
+                        <passages>
+                            <passage>OFCA Broadband Performance
+                                <hlword>Test</hlword> (Version 2.1).</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>1</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z87AE4E29922BDB64">
+                        <relevance />
+                        <url>http://www.InfoCar.ua/test-drive/smart/</url>
+                        <domain>www.InfoCar.ua</domain>
+                        <title>
+                            <hlword>Тест</hlword>-драйвы smart - тестдрайвы автомобилей Смарт</title>
+                        <size>735</size>
+                        <charset>windows-1251</charset>
+                        <passages>
+                            <passage>С помощью нашего каталога
+                                <hlword>тест</hlword>-драйвов Вы сможете узнать мнение автомобильных экспертов об интересующем Вас автомобиле.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z7794116B00AFF1FB">
+                        <relevance />
+                        <url>http://www.berettausa.com/</url>
+                        <domain>www.berettausa.com</domain>
+                        <title>Beretta USA</title>
+                        <headline>Владелец сайта предпочёл скрыть описание страницы.</headline>
+                        <size>0</size>
+                        <charset>windows-1251</charset>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="ZBDFEDB45C32D572C">
+                        <relevance />
+                        <url>https://www.thatquiz.org/</url>
+                        <domain>www.thatquiz.org</domain>
+                        <title>Math
+                            <hlword>test</hlword> activities for students and teachers of all grade levels</title>
+                        <headline>Free math practice and
+                            <hlword>testing</hlword> site for students with complete class record keeping and grading for teachers.</headline>
+                        <size>296</size>
+                        <charset>utf-8</charset>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="ZCC6F5CF76F190D41">
+                        <relevance />
+                        <url>http://www.unduhfilm21.net/</url>
+                        <domain>www.unduhfilm21.net</domain>
+                        <title>Download Film Baru</title>
+                        <headline>Владелец сайта предпочёл скрыть описание страницы.</headline>
+                        <size>0</size>
+                        <charset>windows-1251</charset>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>id</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z4D719B7B87DB4759">
+                        <relevance />
+                        <url>http://www.lacentrale.fr/</url>
+                        <domain>www.lacentrale.fr</domain>
+                        <title>Voiture occasion - Annonces auto - La Centrale</title>
+                        <headline>Sur La Centrale ® retrouvez 306 216 annonces vérifiées de véhicules d'occasion, vendus par des particuliers et des professionnels dans toute la France.</headline>
+                        <size>993</size>
+                        <charset>iso-8859-15</charset>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>fr</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z95A9924CBCFD7D6D">
+                        <relevance />
+                        <url>http://dip3.fitolodas.homelinux.com/page/test-po-anglijskomu-yaziku-7-klass-spotlight-test-booklet/</url>
+                        <domain>dip3.fitolodas.homelinux.com</domain>
+                        <title>
+                            <hlword>Тест</hlword> по английскому языку 7 класс spotlight
+                            <hlword>test</hlword> booklet</title>
+                        <size>822</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>Бесплатные
+                                <hlword>тесты</hlword> языку,
+                                <hlword>тест</hlword> английский язык Английский онлайн это быстрый бесплатный</passage>
+                            <passage>Проверьте свои знания, пройдите бесплатные определение уровня placement
+                                <hlword>test</hlword>. online...</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z60930BFED623C404">
+                        <relevance />
+                        <url>http://effekttest.ru/</url>
+                        <domain>effekttest.ru</domain>
+                        <title>Центр независимых педагогических измерений &quot;ЭффектТест&quot;</title>
+                        <size>0</size>
+                        <charset>windows-1251</charset>
+                        <passages>
+                            <passage>effekt
+                                <hlword>test</hlword>.ru.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>1</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z045FC2DD0C8049E6">
+                        <relevance />
+                        <url>http://browsershots.org/</url>
+                        <domain>browsershots.org</domain>
+                        <title>Check Browser Compatibility, Cross Platform Browser
+                            <hlword>Test</hlword>
+                        </title>
+                        <size>1085</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>It is a free open-source online web application providing developers a convenient way to
+                                <hlword>test</hlword> their website's browser compatibility in one place.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z4EAD09CDBB4E0A86">
+                        <relevance />
+                        <url>http://WomanAdvice.ru/test-na-silu-voli</url>
+                        <domain>WomanAdvice.ru</domain>
+                        <title>
+                            <hlword>Тест</hlword> на силу воли</title>
+                        <size>1462</size>
+                        <charset>utf-8</charset>
+                        <passages>
+                            <passage>
+                                <hlword>Тест</hlword> на силу воли. Нет на свете человека, у которого в жизни было бы все гладко. В какой-то момент случаются взлеты, а иногда нас ждут падения.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z9DD7EAC2E3D4DF54">
+                        <relevance />
+                        <url>http://www.mudah.my/</url>
+                        <domain>www.mudah.my</domain>
+                        <title>Mudah.my - official site</title>
+                        <headline>Владелец сайта предпочёл скрыть описание страницы.</headline>
+                        <size>0</size>
+                        <charset>windows-1251</charset>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z5AE23D8EC02D8D4A">
+                        <relevance />
+                        <url>http://camstudio.org/</url>
+                        <domain>camstudio.org</domain>
+                        <title>CamStudio - Free Screen Recording Software</title>
+                        <headline>Records screen activity from the Windows desktop into standard AVI movie files. It is an ideal tool for creating software demonstrations and active presentations.</headline>
+                        <size>1796</size>
+                        <charset>windows-1252</charset>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z14853E1696DE5CDE">
+                        <relevance />
+                        <url>http://www.easy-burner.com/</url>
+                        <domain>www.easy-burner.com</domain>
+                        <title>easy-burner.com</title>
+                        <headline>Владелец сайта предпочёл скрыть описание страницы.</headline>
+                        <size>0</size>
+                        <charset>windows-1251</charset>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z32020F46AF8A637C">
+                        <relevance />
+                        <url>https://www.linkomanija.net/</url>
+                        <domain>www.linkomanija.net</domain>
+                        <title>LinkoManija.net :: Prisijungimas</title>
+                        <headline>BitTorrent failų indeksacijos puslapis, naujus narius registruojantis tik su pakvietimu.</headline>
+                        <size>63</size>
+                        <charset>utf-8</charset>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>lt</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z718C0AEF500ABB82">
+                        <relevance />
+                        <url>http://www.20minutes.fr/</url>
+                        <domain>www.20minutes.fr</domain>
+                        <title>20 Minutos</title>
+                        <headline>Владелец сайта предпочёл скрыть описание страницы.</headline>
+                        <size>0</size>
+                        <charset>windows-1251</charset>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>fr</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="ZFC80BE42B55B13CA">
+                        <relevance />
+                        <url>http://test3.tankionline.com/</url>
+                        <domain>test3.tankionline.com</domain>
+                        <title>
+                            <hlword>test</hlword>3.tankionline.com</title>
+                        <headline>Владелец сайта предпочёл скрыть описание страницы.</headline>
+                        <size>0</size>
+                        <charset>windows-1251</charset>
+                        <properties>
+                            <_PassagesType>1</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="ZB1D2A72E5EA71969">
+                        <relevance />
+                        <url>http://www.drudgereport.com/</url>
+                        <domain>www.drudgereport.com</domain>
+                        <title>DRUDGE REPORT 2017</title>
+                        <size>1666</size>
+                        <charset>windows-1252</charset>
+                        <passages>
+                            <passage>Man 'deliberately drives car into pedestrians' in Germany... One killed, two others injured... NASA
+                                <hlword>Tests</hlword> supersonic jet... 1,354MPH... Front pages UK world.</passage>
+                        </passages>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z83FD6438E647BF2F">
+                        <relevance />
+                        <url>http://www.dickssportinggoods.com/</url>
+                        <domain>www.dickssportinggoods.com</domain>
+                        <title>DICK’S Sporting Goods – Official Site – Every Season Starts at DICK’S</title>
+                        <headline>Visit DICK'S Sporting Goods and Shop a Wide Selection of Sports Gear, Equipment, Apparel and Footwear! Get the Top Brands at Competitive Prices.</headline>
+                        <size>2090</size>
+                        <charset>utf-8</charset>
+                        <properties>
+                            <_PassagesType>1</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z3FC4DD8EDAF4063E">
+                        <relevance />
+                        <url>http://test1.tankionline.com/</url>
+                        <domain>test1.tankionline.com</domain>
+                        <title>
+                            <hlword>test</hlword>1.tankionline.com</title>
+                        <headline>Владелец сайта предпочёл скрыть описание страницы.</headline>
+                        <size>0</size>
+                        <charset>windows-1251</charset>
+                        <properties>
+                            <_PassagesType>1</_PassagesType>
+                            <lang>ru</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+                <group>
+                    <doccount>1</doccount>
+                    <relevance />
+                    <doc id="Z4FAA51E938D00954">
+                        <relevance />
+                        <url>http://www.beretta.com/</url>
+                        <domain>www.beretta.com</domain>
+                        <title>Beretta</title>
+                        <headline>Provides information about the broad line of weapons made by this firm. In Italian and English.</headline>
+                        <size>0</size>
+                        <charset>windows-1251</charset>
+                        <properties>
+                            <_PassagesType>0</_PassagesType>
+                            <lang>en</lang>
+                        </properties>
+                        <mime-type>text/html</mime-type>
+                    </doc>
+                </group>
+            </grouping>
+        </results>
+    </response>
+</yandexsearch>
