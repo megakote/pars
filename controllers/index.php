@@ -14,7 +14,7 @@ namespace controllers {
 		}
 
 		protected function render($action){
-
+			
 			$inner = view::template('parser/v_index.php', ['title' => $this->title]);
 			$content = view::template('v_main.php', ['title' => $this->title, 'content' => $inner, 'js_vars' => $this->js_vars, 'scripts' => $this->scripts]);
 			echo $content;
