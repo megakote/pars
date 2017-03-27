@@ -1,7 +1,4 @@
 <?php
-	error_reporting(E_ERROR | E_WARNING | E_PARSE);
-	setlocale(LC_ALL, 'ru_RU.UTF8');
-	ignore_user_abort(true);
 	include_once('config.php');
 	include_once('autoload.php');
 	
