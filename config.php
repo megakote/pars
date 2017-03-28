@@ -1,13 +1,13 @@
 <?php
 
 set_time_limit(0);
-error_reporting(E_ERROR | E_WARNING | E_PARSE);
+error_reporting(E_ALL);
 setlocale(LC_ALL, 'ru_RU.UTF8');
 ignore_user_abort(true);
 
 //Database
-define('MYSQL_SERVER', 'localhost');
-define('MYSQL_USER', 'admin');
+define('MYSQL_SERVER', '127.0.0.1:3305');
+define('MYSQL_USER', 'root');
 define('MYSQL_PASSWORD', '');
 define('MYSQL_DB', 'myparser');
 
@@ -18,3 +18,6 @@ define('YA_FILTER', 'moderate'); // Фильтр: strict - семеный, moder
 
 define('VIEWER_DIR', 'data/viewer_stat/');
 define('COOKIE_DIR', 'cookie/');
+
+define('DEBUG', true);
+
