@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var data1 = _PHP.stat;
+    var data = _PHP.stat;
     $('#ya_click').click(function() {
         $(this).hide();
 

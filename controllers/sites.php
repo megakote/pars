@@ -1,7 +1,7 @@
 <?php 
 
 namespace controllers {
-	use \models\view as view;
+	use \models\view as view;	
 	use \models\parser as parser;
 	use \models\dataforparse\yandex as yandex;
 
@@ -17,41 +17,19 @@ namespace controllers {
 		public $i = 0;
 
 		public function __construct(){
-			//Получаем список запросов
-			$this->query = [
-					'Интернет магазин строительных материалов',
-					'Интернет магазин цветов',
-					'дешевый интернет магазин',
-					'интернет магазин +с бесплатной доставкой',
-					'интернет магазин детской одежды',
-					'интернет магазин мебели',
-					'интернет магазин книг',
-					'интернет магазин книг',
-					'лабиринт интернет магазин',
-					'интернет магазин техники',
-					'детский мир интернет магазин',
-					'интернет магазин распродажа',
-					'платья интернет магазин',
-					'интернет магазин одежды +с доставкой',
-					'интернет магазин одежды +с бесплатной доставкой',
-					'интернет магазин бытовой',
-					'интернет магазин каталог товаров',
-					'интернет магазин нижнего',
-					'интернет магазин бытовой техники',
-					'интернет магазин белья'
-				];
+			parent::__construct();
+			$this->query = $this->db->GetQuerys();
+			v($this->query);
 		}
-
 
 		public function action_index(){
 			
-		}		
+		}
+
 		public function action_yandex(){
 			
 			$this->ajax = true;
 			$c = new yandex();
-			echo $query_count = $this->db->select("SELECT count(*) as cnt FROM urls")[0]['cnt'];
-			die();
 			foreach ($this->query as $query) {
 				$data = $c->GetContent($query,2);
 				$p = parser::app($data);
@@ -69,7 +47,6 @@ namespace controllers {
 							'protocol'	=> $data['scheme'], 
 							'hash' 		=> $hash
 						];
-					var_dump($urls);
 					$this->db->insert('urls', $urls);
 					$this->i++;
 					if ($this->i > 10) {

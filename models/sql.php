@@ -2,8 +2,8 @@
 
 namespace models{
     class sql{
-        private static $instance;
-        private $db;
+        protected static $instance;
+        protected $db;
 
         public static function app() {
             if (self::$instance == null) {
@@ -13,7 +13,7 @@ namespace models{
             return self::$instance;
         }
 
-        private function __construct() {
+        protected function __construct() {
             setlocale(LC_ALL, 'ru_RU.UTF8');
             $this->db = new \PDO('mysql:host=' . MYSQL_SERVER . ';dbname=' . MYSQL_DB, MYSQL_USER, MYSQL_PASSWORD);
             $this->db->exec('SET NAMES UTF8');

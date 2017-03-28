@@ -9,7 +9,7 @@ namespace controllers {
 		protected $scripts = ['jquery-1.11.3.min', 'common'];
 		protected $js_vars = [];
 
-		private function __construct(){
+		function __construct(){
 			
 		}
 
