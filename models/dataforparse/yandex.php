@@ -9,8 +9,6 @@ namespace models\dataforparse {
 		public $data = '';
 		private $c = '';
 
-		protected $page = 0;
-
 		function __construct(){            
             $this->c = curl::app('https://yandex.ru/search')->config_load('trip.cfg');
                              
@@ -23,7 +21,7 @@ namespace models\dataforparse {
 			}
 
 			for ($i=0; $pages >= $i; $i++) { 
-				$this->data .= $this->c->request('/xml?user='.YA_USER.'&key='.YA_KEY.'&lr=213&query='.urlencode($query).'&lr=38&l10n=ru&sortby=tm.order%3Dascending&filter=none&groupby=attr%3D%22%22.mode%3Dflat.groups-on-page%3D100.docs-in-group%3D1&page='.$this->page);
+				$this->data .= $this->c->request('/xml?user='.YA_USER.'&key='.YA_KEY.'&lr=213&query='.urlencode($query).'&lr=38&l10n=ru&sortby=tm.order%3Dascending&filter=none&groupby=attr%3D%22%22.mode%3Dflat.groups-on-page%3D100.docs-in-group%3D1&page='.$i);
 			}
 
 			return $this->data;

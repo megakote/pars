@@ -8,7 +8,6 @@ namespace models{
         private $options; // массив с настройками курла
         //
         // Инициализация класса для конкретного домена
-
         //
         public static function app($host) {
             return new self($host);

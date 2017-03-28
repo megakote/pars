@@ -3,14 +3,14 @@
 namespace models{
 // TODO: Либо уйти от синглтона, либо организовать нормальную иерархию классов.
 	class database {
-		protected $db;
+		public $db;
 		public function __construct() {
 			$this->db = \models\sql::app();
 		}
 
 		//Получаем список запросов
 		public function GetQuerys() {
-			if(!DEBUG){
+			if(DEBUG){
 				return [
 						'Интернет магазин строительных материалов',
 						'Интернет магазин цветов',

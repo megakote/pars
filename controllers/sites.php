@@ -18,8 +18,8 @@ namespace controllers {
 
 		public function __construct(){
 			parent::__construct();
+			// TODO: Убрать вызов в отдельную функцию.
 			$this->query = $this->db->GetQuerys();
-			v($this->query);
 		}
 
 		public function action_index(){
@@ -47,19 +47,17 @@ namespace controllers {
 							'protocol'	=> $data['scheme'], 
 							'hash' 		=> $hash
 						];
-					$this->db->insert('urls', $urls);
+					$this->db->db->insert('urls', $urls);
 					$this->i++;
 					if ($this->i > 10) {
 						die();
 					}
 				}
 			}
-			
-					
-			
+
 		}
 		public function action_stat(){
-			$this->data['urls_count'] = $this->db->select("SELECT count(*) as cnt FROM urls")[0]['cnt'];
+			$this->data['urls_count'] = $this->db->db->select("SELECT count(*) as cnt FROM urls")[0]['cnt'];
 			$this->data['i'] = $this->i;
 		}
 		protected function render($action){

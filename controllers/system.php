@@ -2,7 +2,7 @@
 
 namespace controllers{
 	abstract class System{
-        protected $db;
+        public $db;
         protected $params;
 
         protected abstract function render($action);
