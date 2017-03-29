@@ -9,7 +9,7 @@ ignore_user_abort(true);
 define('MYSQL_SERVER', '127.0.0.1:3305');
 define('MYSQL_USER', 'root');
 define('MYSQL_PASSWORD', '');
-define('MYSQL_DB', 'myparser');
+define('MYSQL_DB', '1myparser');
 
 //Yandex
 define('YA_USER', 'slowdream');
