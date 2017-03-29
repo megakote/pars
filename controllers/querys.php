@@ -6,7 +6,7 @@ namespace controllers {
 	use \models\dataforparse\yandex as yandex;
 
 	class querys extends system{		
-		protected $title = 'Парсим список url\'ов';
+		protected $title = 'Работа со списком запросов';
 		protected $scripts = ['jquery-1.11.3.min', 'common'];
 		protected $js_vars = [];
 		protected $ajax = false;
@@ -26,7 +26,7 @@ namespace controllers {
 
 		protected function render($action){
 			if (!$this->ajax) {	
-				
+
 				switch($action){
 					case 'action_index':
 						$inner = view::template('parser/v_querys.php', ['title' => $this->title]);
