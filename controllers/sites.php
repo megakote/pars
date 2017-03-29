@@ -27,7 +27,6 @@ namespace controllers {
 		}
 
 		public function action_yandex(){
-			
 			$this->ajax = true;
 			$c = new yandex();
 			foreach ($this->query as $query) {
@@ -54,7 +53,6 @@ namespace controllers {
 					}
 				}
 			}
-
 		}
 		public function action_stat(){
 			$this->data['urls_count'] = $this->db->db->select("SELECT count(*) as cnt FROM urls")[0]['cnt'];
@@ -67,12 +65,15 @@ namespace controllers {
 					case 'action_index':
 						$inner = view::template('parser/v_sites.php', ['length' => $this->length, 'title' => $this->title]);
 						break;
+					case 'action_querys':
+						$inner = view::template('parser/v_querys.php', ['title' => $this->title]);
+						break;
 					case 'action_stat':
 						$inner = view::template('parser/v_viewer_stat.php', ['data' => $this->data, 'title' => $this->title]);
 						$this->js_vars = ['stat' => false];
 						break;
 					default:
-						$content = '';
+						$inner = '';
 				}
 				
 				$content = view::template('v_main.php', ['title' => $this->title, 'content' => $inner, 'js_vars' => $this->js_vars, 'scripts' => $this->scripts]);

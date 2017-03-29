@@ -5,6 +5,12 @@
 	<title><?=$title?></title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/media/css/style.css">
+	<script>
+		_PHP = <?=json_encode($js_vars)?>;
+	</script>
+	<? foreach($scripts as $script): ?>
+		<script src="/media/js/<?=$script?>.js"></script>
+	<? endforeach; ?>
 </head>
 <body>
 	<div class="container">
@@ -18,11 +24,6 @@
 			<?=$content?>
 		</div>
 	</div>
-	<script>
-		_PHP = <?=json_encode($js_vars)?>;
-	</script>
-	<? foreach($scripts as $script): ?>
-		<script src="/media/js/<?=$script?>.js"></script>
-	<? endforeach; ?>
+
 </body>
 </html>

@@ -7,7 +7,7 @@ namespace controllers{
 
         protected abstract function render($action);
         
-        protected function __construct(){
+        public function __construct(){
             $this->db = new \models\database();
         }
 
@@ -18,7 +18,8 @@ namespace controllers{
 		}
         
         public function __call($name, $params){
-            echo '404';
+            echo "Не найден вызов метода '$name' "
+             . implode(', ', $params). "\n";
         }
 	}
 }

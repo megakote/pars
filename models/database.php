@@ -10,7 +10,7 @@ namespace models{
 
 		//Получаем список запросов
 		public function GetQuerys() {
-			if(DEBUG){
+			if(!DEBUG){
 				return [
 						'Интернет магазин строительных материалов',
 						'Интернет магазин цветов',
@@ -30,7 +30,7 @@ namespace models{
 
 			$querys = explode($delimiter, $querys);
 			foreach ($querys as $query) {
-				$query['val'] = $query;
+				$query = ['val' => $query];
 				$this->db->insert('querys', $query);
 			}
 

@@ -13,6 +13,9 @@ namespace controllers {
 			
 		}
 
+		public function action_index(){
+		}
+
 		protected function render($action){
 			
 			$inner = view::template('parser/v_index.php', ['title' => $this->title]);
