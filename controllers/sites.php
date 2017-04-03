@@ -18,8 +18,7 @@ namespace controllers {
 
 		public function __construct(){
 			parent::__construct();
-			// TODO: Убрать вызов в отдельную функцию.
-			$this->query = $this->db->GetQuerys();
+			
 		}
 
 		public function action_index(){
@@ -29,37 +28,40 @@ namespace controllers {
 		public function action_yandex(){
 			$this->ajax = true;
 			$c = new yandex();
-			foreach ($this->query as $query) {
-				$data = $c->GetContent($query,2);
-				$p = parser::app($data);
-				$i = 0;
-				$urls = [];				
-				while (true) {
-					$data = $p->subtag_inner('<url', 'url');
-					if ($data == -1)
-						break;
-					
-					$data = parse_url($data);
-					$hash = $c::make_hash($data['host']);
-					$urls = [
-							'url'		=> $data['host'], 
-							'protocol'	=> $data['scheme'], 
-							'hash' 		=> $hash
-						];
-					$this->db->db->insert('urls', $urls);
-					$this->i++;
-					if ($this->i > 10) {
-						die();
+			while (true) {
+				$query = $this->db->GetQuerys(5);
+				foreach ($query as $query) {
+					$data = $c->GetContent($query,2);
+					$p = parser::app($data);
+					$urls = [];
+					$this->db->SetUsed($query);
+					while (true) {
+						$data = $p->subtag_inner('<url', 'url');
+						if ($data == -1)
+							break;
+						
+						$data = parse_url($data);
+						$hash = $c::make_hash($data['host']);
+						$urls = [
+								'url'		=> $data['host'], 
+								'protocol'	=> $data['scheme'], 
+								'hash' 		=> $hash
+							];
+						$this->db->AddUrls($urls);
+						$this->i++;
+						if ($this->i > 10) {
+							die();
+						}
 					}
 				}
 			}
 		}
 		public function action_stat(){
-			$this->data['urls_count'] = $this->db->db->select("SELECT count(*) as cnt FROM urls")[0]['cnt'];
+			$this->data['urls_count'] = $this->db->GetCounts();
 			$this->data['i'] = $this->i;
 		}
 		protected function render($action){
-			if (!$this->ajax) {		
+			if (!$this->ajax) {
 
 				switch($action){
 					case 'action_index':

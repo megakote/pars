@@ -8,9 +8,17 @@ namespace models{
 			$this->db = \models\sql::app();
 		}
 
+		//Добавляем урлы
+		public function AddUrls($urls){
+			$this->db->insert('urls', $urls);
+		}
+		//Получаем количество урлов
+		public function GetCounts(){
+			return $this->db->select("SELECT count(*) as cnt FROM urls")[0]['cnt'];
+		}
 		//Получаем список запросов
-		public function GetQuerys() {
-			if(!DEBUG){
+		public function GetQuerys($count=10) {
+			if(DEBUG){
 				return [
 						'Интернет магазин строительных материалов',
 						'Интернет магазин цветов',
@@ -19,7 +27,8 @@ namespace models{
 			}
 
 			$q = [];
-			$querys = $this->db->select("SELECT val as val FROM querys");
+			//TODO: нужны тесты
+			$querys = $this->db->select('SELECT val as val FROM querys WHERE used != NULL LIMIT ' .$count);
 			foreach ($querys as $query) {
 				$q[] = $query['val'];
 			}
@@ -34,6 +43,10 @@ namespace models{
 				$this->db->insert('querys', $query);
 			}
 
+		}
+
+		public function SetUsed($query){
+			$this->db->update('querys', ['used' => true], "query = ".$query)
 		}
 	}
 }
