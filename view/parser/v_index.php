@@ -4,6 +4,6 @@
 
 
 <div class="col-xs-12">
-	<a href="#" class="btn btn-primary btn-lg">Парсим яндекс</a>
+	<a href="/querys/" class="btn btn-primary btn-lg">Работа с запросами</a>
 </div>
 

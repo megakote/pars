@@ -57,7 +57,7 @@ namespace controllers {
 			}
 		}
 		public function action_stat(){
-			$this->data['urls_count'] = $this->db->GetCounts();
+			$this->data['urls_count'] = $this->db->GetCounts('urls');
 			$this->data['i'] = $this->i;
 		}
 		protected function render($action){

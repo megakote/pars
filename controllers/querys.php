@@ -17,12 +17,19 @@ namespace controllers {
 		}
 		public function action_add(){
 			$this->ajax = true;
-			$this->db->AddQuerys($_POST["querys"],$_POST["delimiter"]);
+			echo implode(",", $this->db->AddQuerys($_POST["querys"],$_POST["delimiter"]));
 		}
 		public function action_show(){
 			$this->ajax = true;
-			echo count($this->db->GetQuerys());
+			echo $this->db->GetCounts('querys');
 		}
+
+		public function action_del(){
+			$this->ajax = true;
+			$this->db->DelQuerys($_POST["id"]);
+		}
+
+		//TODO: Добавить функцию удаления дубликатов.
 
 		protected function render($action){
 			if (!$this->ajax) {	

@@ -14,6 +14,12 @@
 	</table>
 </div>
 <div class="col-sm-4 col-sm-push-4" style="text-align: center;">
+<style type="text/css">
+	.btn {
+		width: 100%;
+		margin-top: 10px;
+	}
+</style>
 <form name="querys">
 	<legend>Добавить поисковые фразы</legend>
 	<label>Выберите разделитель
@@ -24,6 +30,7 @@
 	</label>
 	<textarea name="querys" rows="10" style="width: 100%;margin: 10px 0;"></textarea>
 	<button type="submit" class="btn">Подтвердить</button>
+	<button id="cancel" data-value="20" class="btn" style="display: none;">Отменить</button>
 </form>
 
 </div>
@@ -49,7 +56,26 @@ $(document).ready(function() {
 			type: 'post',
             data: $(this).serialize(),
 			success: function(data) {
-			    $('#data pre').html(data);
+				if (data) {
+					$('textarea').val('');				
+					$('#cancel').show('400');
+					$("#cancel").attr("data-value", data);
+				    $('#data pre').html(data);
+				    GetCount();
+				}
+			}
+		});
+		return false;
+	});
+	$('#cancel').click(function() {
+		$.ajax({
+			url: '/querys/del',
+			type: 'post',
+            data: {id:$("#cancel").attr("data-value")},
+			success: function(data) {
+				$('textarea').val('');
+				$('#cancel').hide();
+			    $('#data pre').html(data);			    
 			    GetCount();
 			}
 		});

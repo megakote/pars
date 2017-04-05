@@ -13,12 +13,12 @@ namespace models{
 			$this->db->insert('urls', $urls);
 		}
 		//Получаем количество урлов
-		public function GetCounts(){
-			return $this->db->select("SELECT count(*) as cnt FROM urls")[0]['cnt'];
+		public function GetCounts($from){
+			return $this->db->select("SELECT count(*) as cnt FROM $from")[0]['cnt'];
 		}
 		//Получаем список запросов
-		public function GetQuerys($count=10) {
-			if(DEBUG){
+		public function GetQuerys($count=false) {
+			if(!DEBUG){
 				return [
 						'Интернет магазин строительных материалов',
 						'Интернет магазин цветов',
@@ -27,8 +27,12 @@ namespace models{
 			}
 
 			$q = [];
-			//TODO: нужны тесты
-			$querys = $this->db->select('SELECT val as val FROM querys WHERE used != NULL LIMIT ' .$count);
+			if ($count) {
+				$querys = $this->db->select('SELECT val as val FROM querys WHERE used IS NULL LIMIT ' .$count);
+			} else {
+				$querys = $this->db->select('SELECT val as val FROM querys WHERE used IS NULL');
+			}
+			
 			foreach ($querys as $query) {
 				$q[] = $query['val'];
 			}
@@ -38,15 +42,26 @@ namespace models{
 		public function AddQuerys($querys, $delimiter = ',') {
 
 			$querys = explode($delimiter, $querys);
+			$q = [];
 			foreach ($querys as $query) {
+				if ($query == ''){
+					continue;
+				}
 				$query = ['val' => $query];
-				$this->db->insert('querys', $query);
+				$q[] = $this->db->insert('querys', $query);
 			}
 
+			return $q;
 		}
-
+		//Удаляем записи по ИД
+		public function DelQuerys($id){
+			$id = explode(',', $id);
+			foreach ($id as $id) {
+				$this->db->delete('querys', 'id = '.$id);
+			}
+		}
 		public function SetUsed($query){
-			$this->db->update('querys', ['used' => true], "query = ".$query)
+			$this->db->update('querys', ['used' => true], "query = ".$query);
 		}
 	}
 }
