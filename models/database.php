@@ -1,7 +1,7 @@
 <?php
 
 namespace models{
-// TODO: Либо уйти от синглтона, либо организовать нормальную иерархию классов.
+
 	class database {
 		public $db;
 		public function __construct() {
@@ -18,7 +18,7 @@ namespace models{
 		}
 		//Получаем список запросов
 		public function GetQuerys($count=false) {
-			if(!DEBUG){
+			if(DEBUG){
 				return [
 						'Интернет магазин строительных материалов',
 						'Интернет магазин цветов',
@@ -28,9 +28,9 @@ namespace models{
 
 			$q = [];
 			if ($count) {
-				$querys = $this->db->select('SELECT val as val FROM querys WHERE used IS NULL LIMIT ' .$count);
+				$querys = $this->db->select('SELECT val FROM querys WHERE used IS NULL LIMIT ' .$count);
 			} else {
-				$querys = $this->db->select('SELECT val as val FROM querys WHERE used IS NULL');
+				$querys = $this->db->select('SELECT val FROM querys WHERE used IS NULL');
 			}
 			
 			foreach ($querys as $query) {
@@ -38,7 +38,7 @@ namespace models{
 			}
 			return $q;
 		}
-		//Добавляем в базу список запросов
+		//Добавляем в базу список запросов, возвращаем айдишники этих запросов в базе. 
 		public function AddQuerys($querys, $delimiter = ',') {
 
 			$querys = explode($delimiter, $querys);
@@ -60,8 +60,9 @@ namespace models{
 				$this->db->delete('querys', 'id = '.$id);
 			}
 		}
+		//Помечаем запрос как использованный (used)
 		public function SetUsed($query){
-			$this->db->update('querys', ['used' => true], "query = ".$query);
+			$this->db->update('querys', ['used' => 1], "querys.val = \"$query\"");
 		}
 	}
 }

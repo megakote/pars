@@ -22,19 +22,26 @@ namespace controllers {
 		}
 
 		public function action_index(){
-			
+			//Проверяем запущен ли процесс парсинга
+			if (true) {
+				// header("HTTP/1.1 301 Moved Permanently"); 
+				// header("Location: stat"); 
+				// exit(); 
+			}
+
+			$this->action_yandex();
 		}
 
-		public function action_yandex(){
+		private function action_yandex(){
 			$this->ajax = true;
 			$c = new yandex();
 			while (true) {
 				$query = $this->db->GetQuerys(5);
+				v($query);
 				foreach ($query as $query) {
 					$data = $c->GetContent($query,2);
 					$p = parser::app($data);
-					$urls = [];
-					$this->db->SetUsed($query);
+					$urls = [];					
 					while (true) {
 						$data = $p->subtag_inner('<url', 'url');
 						if ($data == -1)
@@ -48,11 +55,9 @@ namespace controllers {
 								'hash' 		=> $hash
 							];
 						$this->db->AddUrls($urls);
-						$this->i++;
-						if ($this->i > 10) {
-							die();
-						}
+						$this->i++;						
 					}
+					$this->db->SetUsed($query);
 				}
 			}
 		}
