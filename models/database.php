@@ -18,7 +18,7 @@ namespace models{
 		}
 		//Получаем список запросов
 		public function GetQuerys($count=false) {
-			if(DEBUG){
+			if(!DEBUG){
 				return [
 						'Интернет магазин строительных материалов',
 						'Интернет магазин цветов',

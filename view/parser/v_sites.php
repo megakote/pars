@@ -1,11 +1,19 @@
-<center><h1><?=$title?></h1></center>
+<center><h1>Парсинг ссылок</h1></center>
 
 <div class="col-xs-12">
-	<a href="#" id="ya_click" class="btn btn-primary btn-lg">Парсим яндекс</a>
-</div>
-<div class="col-xs-12">
-	<div id="data">
-		<pre>
-		</pre>
-	</div>
+		<script>
+		$(document).ready(function() {			
+			$('#start').click(function() {
+				$.ajax({
+					url: '/sites/yandex',
+					type: 'post',            
+					success: function() {						
+					}
+				});
+
+				location.href = '/sites/stat';
+			});
+		});
+		</script>
+		<button type="button" class="btn btn-lg btn-primary" id="start">Начать парсинг</button>	
 </div>

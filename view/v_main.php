@@ -17,8 +17,9 @@
 		<div class="row">
 			<div class="col-md-12 header">
 				<div class="header-line">
-					<span class="glyphicon glyphicon-globe g-left blue-font"></span>
-					<span class="glyphicon glyphicon-home g-right blue-font"></span>
+					<a href="/">
+						<span class="glyphicon glyphicon-globe g-left blue-font"></span>
+					</a>					
 				</div>
 			</div>
 			<?=$content?>

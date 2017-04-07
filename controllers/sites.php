@@ -23,21 +23,19 @@ namespace controllers {
 
 		public function action_index(){
 			//Проверяем запущен ли процесс парсинга
-			if (true) {
-				// header("HTTP/1.1 301 Moved Permanently"); 
-				// header("Location: stat"); 
-				// exit(); 
+			if ($this->stat->isWorked()) {
+				header("HTTP/1.1 301 Moved Permanently"); 
+				header("Location: stat"); 
+				exit(); 
 			}
 
-			$this->action_yandex();
 		}
 
 		private function action_yandex(){
 			$this->ajax = true;
 			$c = new yandex();
 			while (true) {
-				$query = $this->db->GetQuerys(5);
-				v($query);
+				$query = $this->db->GetQuerys(5);				
 				foreach ($query as $query) {
 					$data = $c->GetContent($query,2);
 					$p = parser::app($data);
@@ -58,12 +56,22 @@ namespace controllers {
 						$this->i++;						
 					}
 					$this->db->SetUsed($query);
+					$this->stat->setData('pars_iteration', $this->i);
+				}
+
+				if ($this->stat->needStop() || count($query) == 0) {					
+					break;
 				}
 			}
 		}
 		public function action_stat(){
 			$this->data['urls_count'] = $this->db->GetCounts('urls');
-			$this->data['i'] = $this->i;
+			$this->data['i'] = $this->stat->getData('pars_iteration');			
+			$this->data['worked'] = $this->stat->isWorked();
+		}
+		public function action_stop(){
+			$this->ajax = true;
+			$this->stat->setData('stop',true);
 		}
 		protected function render($action){
 			if (!$this->ajax) {
