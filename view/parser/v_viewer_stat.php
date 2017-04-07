@@ -23,6 +23,8 @@
 		});
 		</script>
 		<button type="button" class="btn btn-lg btn-primary" id="cancel">Остановить парсинг</button>
+	<?else:?>
+	<p>Закончил с ошибкой: <span class="count-all"><?=$data['error']?></span></p>  
 	<?endif;?>
 </div>
 

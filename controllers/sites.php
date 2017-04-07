@@ -32,43 +32,43 @@ namespace controllers {
 		}
 
 		public function action_yandex(){
-			$this->ajax = true;
-			$c = new yandex();
-			echo "1";
-			while (true) {
-				echo "1";
-				$query = $this->db->GetQuerys(5);				
-				foreach ($query as $key => $query) {
-					echo "2";
-					$data = $c->GetContent($query,2);
-					$p = parser::app($data);
-					$urls = [];					
-					while (true) {
-						$data = $p->subtag_inner('<url', 'url');
-						if ($data == -1)
-							break;
-						
-						$data = parse_url($data);
-						$hash = make_hash($data['host']);
-						$urls = [
-								'url'		=> $data['host'], 
-								'protocol'	=> $data['scheme'], 
-								'q_id'		=> $key,
-								'hash' 		=> $hash
-							];
-						$this->db->AddUrls($urls);
-						$this->i++;						
+			if (!$this->stat->isWorked()) {							
+				$this->ajax = true;
+				$c = new yandex();
+				while (true) {
+					$query = $this->db->GetQuerys(5);				
+					foreach ($query as $key => $query) {
+						$data = $c->GetContent($query,2);
+						$p = parser::app($data);
+						$urls = [];					
+						while (true) {
+							$data = $p->subtag_inner('<url', 'url');
+							if ($data == -1)
+								break;
+							
+							$data = parse_url($data);
+							$hash = make_hash($data['host']);
+							$urls = [
+									'url'		=> $data['host'], 
+									'protocol'	=> $data['scheme'], 
+									'q_id'		=> $key,
+									'hash' 		=> $hash
+								];
+							$this->db->AddUrls($urls);
+							$this->i++;						
+						}
+						$this->db->SetUsed($query);
+						$this->stat->setData('pars_iteration', $this->i);
 					}
-					$this->db->SetUsed($query);
-					$this->stat->setData('pars_iteration', $this->i);
-				}
 
-				if ($this->stat->needStop()) {
-					$this->stat->setData('stop', false);				
-					break;
-				}
-				if (count($query) == 0) {
-					break;
+					if ($this->stat->needStop()) {
+						$this->stat->setData('stop', false);				
+						break;
+					}
+					if (count($query) == 0) {
+						$this->stat->setData('error', 'Кончились поисковые фразы');
+						break;
+					}
 				}
 			}
 		}
@@ -76,6 +76,7 @@ namespace controllers {
 			$this->data['urls_count'] = $this->db->GetCounts('urls');
 			$this->data['i'] = $this->stat->getData('pars_iteration');			
 			$this->data['worked'] = $this->stat->isWorked();
+			$this->data['error'] = $this->stat->getData('error');
 		}
 		public function action_stop(){
 			$this->ajax = true;
