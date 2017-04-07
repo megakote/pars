@@ -27,9 +27,6 @@ namespace models\dataforparse {
 			return $this->data;
 
 		}
-		static function make_hash($str, $salt = '', $l = 8){
-		    return hexdec(substr(md5($str . $salt), 0, $l));
-		}
 	}
 }
 

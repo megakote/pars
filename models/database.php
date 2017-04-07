@@ -28,15 +28,15 @@ namespace models{
 
 			$q = [];
 			if ($count) {
-				$querys = $this->db->select('SELECT val FROM querys WHERE used IS NULL LIMIT ' .$count);
+				$querys = $this->db->select('SELECT val,id FROM querys WHERE used IS NULL LIMIT ' .$count);
 			} else {
-				$querys = $this->db->select('SELECT val FROM querys WHERE used IS NULL');
+				$querys = $this->db->select('SELECT val,id FROM querys WHERE used IS NULL');
 			}
-			
 			foreach ($querys as $query) {
-				$q[] = $query['val'];
+				$q[$query['id']] = $query['val'];
 			}
 			return $q;
+
 		}
 		//Добавляем в базу список запросов, возвращаем айдишники этих запросов в базе. 
 		public function AddQuerys($querys, $delimiter = ',') {
@@ -47,8 +47,11 @@ namespace models{
 				if ($query == ''){
 					continue;
 				}
-				$query = ['val' => $query];
-				$q[] = $this->db->insert('querys', $query);
+				$arr = [];
+				$arr['val'] = trim($query);
+				$arr['hash'] = make_hash(trim($query));
+
+				$q[] = $this->db->insert('querys', $arr);
 			}
 
 			return $q;

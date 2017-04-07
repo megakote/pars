@@ -15,7 +15,7 @@ namespace models{
 		}
 
 		function __construct(){
-			$this->setData('stop', false);
+			//$this->setData('stop', false);
 		}
 
 		private function writeData(){
@@ -24,6 +24,7 @@ namespace models{
 			$data = json_encode($this->data);
 			fwrite($f, $data);
 			fclose($f);
+			//v(debug_backtrace());
 		}
 
 		private function readData(){

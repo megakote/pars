@@ -31,12 +31,15 @@ namespace controllers {
 
 		}
 
-		private function action_yandex(){
+		public function action_yandex(){
 			$this->ajax = true;
 			$c = new yandex();
+			echo "1";
 			while (true) {
+				echo "1";
 				$query = $this->db->GetQuerys(5);				
-				foreach ($query as $query) {
+				foreach ($query as $key => $query) {
+					echo "2";
 					$data = $c->GetContent($query,2);
 					$p = parser::app($data);
 					$urls = [];					
@@ -46,10 +49,11 @@ namespace controllers {
 							break;
 						
 						$data = parse_url($data);
-						$hash = $c::make_hash($data['host']);
+						$hash = make_hash($data['host']);
 						$urls = [
 								'url'		=> $data['host'], 
 								'protocol'	=> $data['scheme'], 
+								'q_id'		=> $key,
 								'hash' 		=> $hash
 							];
 						$this->db->AddUrls($urls);
@@ -59,7 +63,11 @@ namespace controllers {
 					$this->stat->setData('pars_iteration', $this->i);
 				}
 
-				if ($this->stat->needStop() || count($query) == 0) {					
+				if ($this->stat->needStop()) {
+					$this->stat->setData('stop', false);				
+					break;
+				}
+				if (count($query) == 0) {
 					break;
 				}
 			}
