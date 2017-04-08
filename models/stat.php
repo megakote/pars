@@ -15,16 +15,14 @@ namespace models{
 		}
 
 		function __construct(){
-			//$this->setData('stop', false);
 		}
 
 		private function writeData(){
-			$this->data['last_mod'] = time();
+			$this->data["last_mod"] = time();
 			$f = fopen($this->file, 'w+');
 			$data = json_encode($this->data);
 			fwrite($f, $data);
 			fclose($f);
-			//v(debug_backtrace());
 		}
 
 		private function readData(){
@@ -50,7 +48,7 @@ namespace models{
 
 		public function isWorked(){
 			$this->readData();
-			if ((time() - $this->data['last_mod']) < TIMEOUT_WORK) {
+			if ((time() - $this->data["last_mod"]) < TIMEOUT_WORK) {
 				return true;
 			}
 			return false;

@@ -22,21 +22,18 @@ namespace controllers {
 		}
 
 		public function action_index(){
-			//Проверяем запущен ли процесс парсинга
-			if ($this->stat->isWorked()) {
-				header("HTTP/1.1 301 Moved Permanently"); 
-				header("Location: stat"); 
-				exit(); 
-			}
-
+			$this->data['urls_count'] = $this->db->GetCounts('urls');
+			$this->data['i'] = $this->stat->getData('pars_iteration');
+			$this->data['worked'] = $this->stat->isWorked();
+			$this->data['error'] = $this->stat->getData('error');
 		}
 
 		public function action_yandex(){
-			if (!$this->stat->isWorked()) {							
+			if (!$this->stat->isWorked()) {
 				$this->ajax = true;
 				$c = new yandex();
 				while (true) {
-					$query = $this->db->GetQuerys(5);				
+					$query = $this->db->GetQuerys(5);
 					foreach ($query as $key => $query) {
 						$data = $c->GetContent($query,2);
 						$p = parser::app($data);
@@ -62,7 +59,7 @@ namespace controllers {
 					}
 
 					if ($this->stat->needStop()) {
-						$this->stat->setData('stop', false);				
+						$this->stat->setData('stop', false);
 						break;
 					}
 					if (count($query) == 0) {
@@ -73,10 +70,7 @@ namespace controllers {
 			}
 		}
 		public function action_stat(){
-			$this->data['urls_count'] = $this->db->GetCounts('urls');
-			$this->data['i'] = $this->stat->getData('pars_iteration');			
-			$this->data['worked'] = $this->stat->isWorked();
-			$this->data['error'] = $this->stat->getData('error');
+
 		}
 		public function action_stop(){
 			$this->ajax = true;
@@ -87,14 +81,10 @@ namespace controllers {
 
 				switch($action){
 					case 'action_index':
-						$inner = view::template('parser/v_sites.php', ['length' => $this->length, 'title' => $this->title]);
+						$inner = view::template('parser/v_sites.php', ['data' => $this->data, 'title' => $this->title]);
 						break;
 					case 'action_querys':
 						$inner = view::template('parser/v_querys.php', ['title' => $this->title]);
-						break;
-					case 'action_stat':
-						$inner = view::template('parser/v_viewer_stat.php', ['data' => $this->data, 'title' => $this->title]);
-						$this->js_vars = ['stat' => false];
 						break;
 					default:
 						$inner = '';
