@@ -7,6 +7,7 @@ namespace controllers {
 
 	class sites extends system{
 
+		private $stat;
 		protected $title = 'Парсим список url\'ов';
 		protected $length = [];
 		protected $scripts = ['jquery-1.11.3.min', 'common'];
@@ -18,6 +19,8 @@ namespace controllers {
 
 		public function __construct(){
 			parent::__construct();
+
+            $this->stat = new \models\stat('links_pars');
 			
 		}
 
@@ -37,7 +40,7 @@ namespace controllers {
 					foreach ($query as $key => $query) {
 						$data = $c->GetContent($query,2);
 						$p = parser::app($data);
-						$urls = [];					
+						$urls = [];
 						while (true) {
 							$data = $p->subtag_inner('<url', 'url');
 							if ($data == -1)
@@ -52,7 +55,7 @@ namespace controllers {
 									'hash' 		=> $hash
 								];
 							$this->db->AddUrls($urls);
-							$this->i++;						
+							$this->i++;
 						}
 						$this->db->SetUsed($query);
 						$this->stat->setData('pars_iteration', $this->i);
@@ -60,6 +63,7 @@ namespace controllers {
 
 					if ($this->stat->needStop()) {
 						$this->stat->setData('stop', false);
+						$this->stat->setData('error', 'Процесс был остановлен пользователем');
 						break;
 					}
 					if (count($query) == 0) {

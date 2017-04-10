@@ -3,17 +3,15 @@
 namespace controllers{
 	abstract class System{
         public $db;
-        protected $params;
-        public $stat; 
+        protected $params;        
 
         protected abstract function render($action);
         
         public function __construct(){
             $this->db = new \models\database();
-            $this->stat = \models\stat::app();
         }
 
-		public function request($action, $params = []){	
+		public function request($action, $params = []){
 			$this->params = $params;
             $this->$action();
             $this->render($action);

@@ -2,32 +2,26 @@
 
 namespace models{
 	class stat {
+		private $who;
 		private $file = VIEWER_DIR .'stat.txt';
 		private $data = [];
-		private static $instance;
 
-		public static function app() {
-			if (self::$instance == null) {
-				self::$instance = new self();
-			}
-
-			return self::$instance;
-		}
-
-		function __construct(){
+		function __construct($who){
+			$this->who = $who;
 		}
 
 		private function writeData(){
 			$this->data["last_mod"] = time();
+			$data[$this->who] = $this->data;
 			$f = fopen($this->file, 'w+');
-			$data = json_encode($this->data);
+			$data = json_encode($data);
 			fwrite($f, $data);
 			fclose($f);
 		}
 
 		private function readData(){
 			$data = file_get_contents($this->file);
-			$this->data = json_decode($data, true);			
+			$this->data = json_decode($data, true)[$this->who];
 		}
 
 		private function setUpdate(){
@@ -37,7 +31,7 @@ namespace models{
 
 		public function setData($key,$val){
 			$this->readData();
-			$this->data[$key] = $val;			
+			$this->data[$key] = $val;
 			$this->writeData();
 		}
 
