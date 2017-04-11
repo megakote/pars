@@ -3,6 +3,7 @@
 namespace controllers {
 	use \models\view as view;	
 	use \models\parser as parser;
+	use \models\stat as stat;
 	use \models\dataforparse\yandex as yandex;
 
 	class sites extends system{
@@ -15,20 +16,17 @@ namespace controllers {
 		protected $ajax = false;
 		public $query = [];
 		public $data = [];
-		public $i = 0;
+		public $process_name = 'links_pars';
+
 
 		public function __construct(){
 			parent::__construct();
 
-            $this->stat = new \models\stat('links_pars');
+            $this->stat = new stat($this->process_name);
 			
 		}
 
 		public function action_index(){
-			$this->data['urls_count'] = $this->db->GetCounts('urls');
-			$this->data['i'] = $this->stat->getData('pars_iteration');
-			$this->data['worked'] = $this->stat->isWorked();
-			$this->data['error'] = $this->stat->getData('error');
 		}
 
 		public function action_yandex(){
@@ -36,7 +34,14 @@ namespace controllers {
 				$this->ajax = true;
 				$c = new yandex();
 				while (true) {
+					$i = 0;
 					$query = $this->db->GetQuerys(5);
+
+					if (count($query) == 0) {
+						$this->stat->setData('error', 'Кончились поисковые фразы');
+						break;
+					}
+
 					foreach ($query as $key => $query) {
 						$data = $c->GetContent($query,2);
 						$p = parser::app($data);
@@ -55,10 +60,11 @@ namespace controllers {
 									'hash' 		=> $hash
 								];
 							$this->db->AddUrls($urls);
-							$this->i++;
+							$this->stat->SetData('status', 'on');
+							$i++;
 						}
 						$this->db->SetUsed($query);
-						$this->stat->setData('pars_iteration', $this->i);
+						$this->stat->setData('pars_iteration', $i);
 					}
 
 					if ($this->stat->needStop()) {
@@ -66,15 +72,17 @@ namespace controllers {
 						$this->stat->setData('error', 'Процесс был остановлен пользователем');
 						break;
 					}
-					if (count($query) == 0) {
-						$this->stat->setData('error', 'Кончились поисковые фразы');
-						break;
-					}
+
 				}
 			}
 		}
 		public function action_stat(){
-
+			$this->ajax = true;
+			//TODO: Проще смержить два массива из stat->getdata и this->data
+			$this->data['urls_count'] = $this->db->GetCounts('urls');
+			$this->data['i'] = $this->stat->getData('pars_iteration');
+			$this->data['worked'] = $this->stat->isWorked();
+			$this->data['error'] = $this->stat->getData('error');
 		}
 		public function action_stop(){
 			$this->ajax = true;
@@ -86,16 +94,15 @@ namespace controllers {
 				switch($action){
 					case 'action_index':
 						$inner = view::template('parser/v_sites.php', ['data' => $this->data, 'title' => $this->title]);
-						break;
-					case 'action_querys':
-						$inner = view::template('parser/v_querys.php', ['title' => $this->title]);
-						break;
+						break;					
 					default:
 						$inner = '';
 				}
 				
 				$content = view::template('v_main.php', ['title' => $this->title, 'content' => $inner, 'js_vars' => $this->js_vars, 'scripts' => $this->scripts]);
 				echo $content;
+			} else {
+				echo json_encode($this->data);
 			}
 		}
 	}

@@ -17,6 +17,7 @@ namespace controllers {
 		}
 		public function action_add(){
 			$this->ajax = true;
+			//TODO: Ну епт, как то не хорошо пихать не обработнные данные
 			echo implode(",", $this->db->AddQuerys($_POST["querys"],$_POST["delimiter"]));
 		}
 		public function action_show(){
