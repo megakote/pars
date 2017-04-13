@@ -67,5 +67,26 @@ namespace models{
 		public function SetUsed($query){
 			$this->db->update('querys', ['used' => 1], "querys.val = \"$query\"");
 		}
+		//Получаем список урлов
+		public function GetQuerys($count=false) {
+			if(!DEBUG){
+				return [
+						'ya.ru',
+						'google.com',
+						'lol.ru'
+					];
+			}
+
+			$q = [];
+			if ($count) {
+				$querys = $this->db->select('SELECT url FROM urls WHERE used IS NULL LIMIT ' .$count);
+			} else {
+				$querys = $this->db->select('SELECT url FROM urls WHERE used IS NULL');
+			}
+			foreach ($querys as $query) {
+				$q[] = $query['val'];
+			}
+			return $q;
+		}
 	}
 }
