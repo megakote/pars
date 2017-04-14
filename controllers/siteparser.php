@@ -3,7 +3,6 @@
 namespace controllers {
 	use \models\view as view;	
 	use \models\parser as parser;
-	use \models\dataforparse\yandex as yandex;
 
 	class siteparser extends system{
 		protected $title = 'Парсим список url\'ов';
@@ -12,11 +11,12 @@ namespace controllers {
 		protected $ajax = false;
 		public $link = [];
 		public $data = [];
+		private $stat;
 		public $i = 0;
 
 		public function __construct(){
 			parent::__construct();
-			
+			$this->stat = new stat($this->process_name);
 		}
 
 		public function action_index(){
@@ -28,6 +28,23 @@ namespace controllers {
 			}
 
 		}
+        protected function render($action){
+            if (!$this->ajax) {
+
+                switch($action){
+                    case 'action_index':
+                        $inner = view::template('parser/v_sites.php', ['data' => $this->data, 'title' => $this->title]);
+                        break;
+                    default:
+                        $inner = '';
+                }
+
+                $content = view::template('v_main.php', ['title' => $this->title, 'content' => $inner, 'js_vars' => $this->js_vars, 'scripts' => $this->scripts]);
+                echo $content;
+            } else {
+                echo json_encode($this->data);
+            }
+        }
 
 	}
 }
