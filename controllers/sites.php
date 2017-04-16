@@ -21,9 +21,7 @@ namespace controllers {
 
 		public function __construct(){
 			parent::__construct();
-
-      $this->stat = new stat($this->process_name);
-			
+            $this->stat = new stat($this->process_name);
 		}
 
 		public function action_index(){

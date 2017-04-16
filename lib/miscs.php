@@ -1,11 +1,22 @@
 <?php
 
-function v($v){
+/**
+ * Выводит оформленный ver_dump
+ * @param $array
+ */
+function v($array){
 	echo "<pre>";
-	var_dump($v);
+	var_dump($array);
 	echo "</pre>";
 }
 
-function make_hash($str, $salt = '', $l = 8){
-	return hexdec(substr(md5($str . $salt), 0, $l));
+/**
+ * Создаем хэш для строки
+ * @param $str
+ * @param string $salt
+ * @param int $length
+ * @return int
+ */
+function make_hash($str, $salt = '', $length = 8){
+	return hexdec(substr(md5($str . $salt), 0, $length));
 }

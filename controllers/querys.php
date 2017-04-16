@@ -20,7 +20,11 @@ namespace controllers {
 			//TODO: Ну епт, как то не хорошо пихать не обработнные данные
 			echo implode(",", $this->db->AddQuerys($_POST["querys"],$_POST["delimiter"]));
 		}
-		public function action_show(){
+
+        /**
+         * Выводит количество запросов в базе
+         */
+        public function action_show(){
 			$this->ajax = true;
 			echo $this->db->GetCounts('querys');
 		}

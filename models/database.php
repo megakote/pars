@@ -8,16 +8,29 @@ namespace models{
 			$this->db = \models\sql::app();
 		}
 
-		//Добавляем урлы
-		public function AddUrls($urls){
+        /**
+         * Добавляем урлы
+         * @param array $urls
+         */
+        public function AddUrls($urls){
 			$this->db->insert('urls', $urls);
 		}
-		//Получаем количество урлов
-		public function GetCounts($from){
+
+        /**
+         * Получаем количество элементов в базе
+         * @param $from
+         * @return int
+         */
+        public function GetCounts($from){
 			return $this->db->select("SELECT count(*) as cnt FROM $from")[0]['cnt'];
 		}
-		//Получаем список запросов
-		public function GetQuerys($count=false) {
+
+        /**
+         * Получаем список запросов
+         * @param int $count
+         * @return array
+         */
+        public function GetQuerys($count=false) {
 			if(!DEBUG){
 				return [
 						'Интернет магазин строительных материалов',
@@ -38,8 +51,13 @@ namespace models{
 			return $q;
 
 		}
-		//Добавляем в базу список запросов, возвращаем айдишники этих запросов в базе. 
-		public function AddQuerys($querys, $delimiter = ',') {
+
+        /**
+         * @param $querys
+         * @param string $delimiter
+         * @return array
+         */
+        public function AddQuerys($querys, $delimiter = ',') {
 
 			$querys = explode($delimiter, $querys);
 			$q = [];
@@ -56,19 +74,32 @@ namespace models{
 
 			return $q;
 		}
-		//Удаляем записи по ИД
-		public function DelQuerys($id){
+
+        /**
+         * Удаляем записи по ИД
+         * @param int $id
+         */
+        public function DelQuerys($id){
 			$id = explode(',', $id);
 			foreach ($id as $id) {
-				$this->db->delete('querys', 'id = '.$id);
+				$this->db->delete('querys', "id = $id");
 			}
 		}
-		//Помечаем запрос как использованный (used)
-		public function SetUsed($query){
+
+        /**
+         * Помечаем запрос как использованный (used)
+         * @param string $query
+         */
+        public function SetUsed($query){
 			$this->db->update('querys', ['used' => 1], "querys.val = \"$query\"");
 		}
-		//Получаем список урлов
-		public function GetQuerys($count=false) {
+
+        /**
+         * Получаем список урлов
+         * @param int $count
+         * @return array
+         */
+        public function GetLinks($count=false) {
 			if(!DEBUG){
 				return [
 						'ya.ru',

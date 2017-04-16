@@ -8,15 +8,23 @@ namespace models{
 							'status' 	=> str,
 							'last_mod'	=> int,
 							'error'		=> str,
+                            'stop'      => bool,
 							'pars_iteration' => int,
 
 						*/];
 
-		function __construct($who){
+        /**
+         * Устанавливаем название выполняемого скрипта, по которому будем его идентифицировать в будущем
+         * @param string $who
+         */
+        function __construct($who){
 			$this->who = $who;
 		}
 
-		private function writeData(){
+        /**
+         *  Функция записывает данные из $this->data в файл
+         */
+        private function writeData(){
 			$this->data["last_mod"] = time();
 			$data[$this->who] = $this->data;
 			$f = fopen($this->file, 'w+');
@@ -25,22 +33,37 @@ namespace models{
 			fclose($f);
 		}
 
-		private function readData(){
+        /**
+         * Функция считывает данные из файла в $this->data
+         */
+        private function readData(){
 			$data = json_decode(file_get_contents($this->file), true);
 			$this->data = $data[$this->who];
 		}
 
-		private function setUpdate(){
+        /**
+         * Функция обновляет время последней активности last_mod
+         */
+        private function setUpdate(){
 			$this->readData();
 			$this->writeData();
 		}
-		private function setPause(){
+
+        /**
+         * Приостанавливает выполнение скрипта на PAUSE_TIME секунд
+         */
+        private function setPause(){
 			$this->setData('status','pause');
 			sleep(PAUSE_TIME);
 			$this->setData('status','on');
 		}
 
-		public function setData($key,$val){
+        /**
+         * Устанаваливаем значение для текущей задачи
+         * @param $key
+         * @param $val
+         */
+        public function setData($key, $val){
 			$this->readData();
 			$this->data[$key] = $val;
 			if ($key == 'error') {
@@ -50,7 +73,12 @@ namespace models{
 			$this->writeData();
 		}
 
-		public function getData($key){
+        /**
+         * Получаем значение определенной статы или список всех статов со значениями
+         * @param $key
+         * @return array|mixed
+         */
+        public function getData($key){
 			$this->readData();
 			if ($key == 'all') {
 				return $this->data;
@@ -58,7 +86,11 @@ namespace models{
 			return $this->data[$key];
 		}
 
-		public function isWorked(){
+        /**
+         * Проверяем работает ли сейчас скрипт в фоне
+         * @return bool
+         */
+        public function isWorked(){
 			$this->readData();
 			if ((time() - $this->data["last_mod"]) < TIMEOUT_WORK) {
 				$this->setData('status','on');
@@ -68,7 +100,11 @@ namespace models{
 			return false;
 		}
 
-		public function needStop(){
+        /**
+         * Проверяем была ли команда на остановку скрипта
+         * @return bool
+         */
+        public function needStop(){
 			$this->readData();
 			if ($this->data['stop'] === true) {
 				return true;
