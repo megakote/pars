@@ -3,15 +3,18 @@
 namespace controllers {
 	use \models\view as view;	
 	use \models\parser as parser;
+	use \models\curl as curl;
+	use \models\stat as stat;
+	use \models\analizator as analizator;
 
 	class siteparser extends system{
 		protected $title = 'Парсим список url\'ов';
 		protected $scripts = ['jquery-1.11.3.min', 'common'];
 		protected $js_vars = [];
 		protected $ajax = false;
-		public $link = [];
-		public $data = [];
+		protected $data = []; //Вся собранная информация
 		private $stat;
+		private $process_name = 'siteparser';
 		public $i = 0;
 
 		public function __construct(){
@@ -27,24 +30,44 @@ namespace controllers {
 				exit(); 
 			}
 
+			$this->startSiteParsing();
 		}
-        protected function render($action){
-            if (!$this->ajax) {
+		function startSiteParsing(){
+				while (true){
+						$urls = $this->db->GetLinks(10);
+						if (count($urls) == 0) {
+								$this->stat->setData('error', 'Кончились адреса сайтов');
+								break;
+						}
+						foreach ($urls as $url) {
+								$c = new curl($url);
+								$c->follow(true);
+								$data = $c->request("/");
+								$anal = new analizator($data['html']);
+								$info = $anal->getData();
+								$this->data[] = $info;
 
-                switch($action){
-                    case 'action_index':
-                        $inner = view::template('parser/v_sites.php', ['data' => $this->data, 'title' => $this->title]);
-                        break;
-                    default:
-                        $inner = '';
-                }
+						}
 
-                $content = view::template('v_main.php', ['title' => $this->title, 'content' => $inner, 'js_vars' => $this->js_vars, 'scripts' => $this->scripts]);
-                echo $content;
-            } else {
-                echo json_encode($this->data);
-            }
-        }
+						v($this->data);
+						die('the end');
+				}
+		}
+		protected function render($action){
+    	if (!$this->ajax) {
+	      switch($action){
+  		    case 'action_index':
+          	$inner = view::template('parser/v_sites.php', ['data' => $this->data, 'title' => $this->title]);
+            break;
+          default:
+            $inner = '';
+          }
 
+          $content = view::template('v_main.php', ['title' => $this->title, 'content' => $inner, 'js_vars' => $this->js_vars, 'scripts' => $this->scripts]);
+          echo $content;
+			} else {
+        	echo json_encode($this->data);
+			}
+		}
 	}
 }

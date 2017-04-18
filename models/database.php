@@ -8,29 +8,29 @@ namespace models{
 			$this->db = \models\sql::app();
 		}
 
-        /**
-         * Добавляем урлы
-         * @param array $urls
-         */
-        public function AddUrls($urls){
+		/**
+		 * Добавляем урлы
+		 * @param array $urls
+		 */
+    public function AddUrls($urls){
 			$this->db->insert('urls', $urls);
 		}
 
-        /**
-         * Получаем количество элементов в базе
-         * @param $from
-         * @return int
-         */
-        public function GetCounts($from){
+		/**
+		 * Получаем количество элементов в базе
+		 * @param $from
+		 * @return int
+		 */
+    public function GetCounts($from){
 			return $this->db->select("SELECT count(*) as cnt FROM $from")[0]['cnt'];
 		}
 
-        /**
-         * Получаем список запросов
-         * @param int $count
-         * @return array
-         */
-        public function GetQuerys($count=false) {
+		/**
+		 * Получаем список запросов
+		 * @param int $count
+		 * @return array
+		 */
+		public function GetQuerys($count=false) {
 			if(!DEBUG){
 				return [
 						'Интернет магазин строительных материалов',
@@ -52,12 +52,12 @@ namespace models{
 
 		}
 
-        /**
-         * @param $querys
-         * @param string $delimiter
-         * @return array
-         */
-        public function AddQuerys($querys, $delimiter = ',') {
+		/**
+		 * @param $querys
+		 * @param string $delimiter
+		 * @return array
+		 */
+		public function AddQuerys($querys, $delimiter = ',') {
 
 			$querys = explode($delimiter, $querys);
 			$q = [];
@@ -75,47 +75,47 @@ namespace models{
 			return $q;
 		}
 
-        /**
-         * Удаляем записи по ИД
-         * @param int $id
-         */
-        public function DelQuerys($id){
+		/**
+		 * Удаляем записи по ИД
+		 * @param int $id
+		 */
+		public function DelQuerys($id){
 			$id = explode(',', $id);
 			foreach ($id as $id) {
 				$this->db->delete('querys', "id = $id");
 			}
 		}
 
-        /**
-         * Помечаем запрос как использованный (used)
-         * @param string $query
-         */
-        public function SetUsed($query){
+		/**
+		 * Помечаем запрос как использованный (used)
+		 * @param string $query
+		 */
+		public function SetUsed($query){
 			$this->db->update('querys', ['used' => 1], "querys.val = \"$query\"");
 		}
 
-        /**
-         * Получаем список урлов
-         * @param int $count
-         * @return array
-         */
-        public function GetLinks($count=false) {
-			if(!DEBUG){
+		/**
+		 * Получаем список урлов
+		 * @param int $count
+		 * @return array
+		 */
+		public function GetLinks($count=false) {
+			if(DEBUG){
 				return [
-						'ya.ru',
-						'google.com',
+						'praktik24.com/about/contacts/',
+						'mail.ru',
 						'lol.ru'
 					];
 			}
 
 			$q = [];
 			if ($count) {
-				$querys = $this->db->select('SELECT url FROM urls WHERE used IS NULL LIMIT ' .$count);
+				$urls = $this->db->select('SELECT url FROM urls WHERE used IS NULL LIMIT ' .$count);
 			} else {
-				$querys = $this->db->select('SELECT url FROM urls WHERE used IS NULL');
+				$urls = $this->db->select('SELECT url FROM urls WHERE used IS NULL');
 			}
-			foreach ($querys as $query) {
-				$q[] = $query['val'];
+			foreach ($urls as $url) {
+				$q[] = $url['val'];
 			}
 			return $q;
 		}

@@ -10,7 +10,7 @@ namespace models{
             return new self($str);
         }
 
-        private function __construct($str) {
+				public function __construct($str) {
             $this->str = $str;
             $this->cur = 0;
         }

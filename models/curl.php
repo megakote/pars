@@ -13,7 +13,7 @@ namespace models{
             return new self($host);
         }
 
-        private function __construct($host) {
+				public function __construct($host) {
             $this->ch = curl_init();
             $this->host = $host;
             $this->options = array(CURLOPT_RETURNTRANSFER => true, CURLOPT_HTTPHEADER => array());
@@ -201,7 +201,7 @@ namespace models{
          * 
          * @param string $url
          */
-        public function request($url) {
+        public function request($url='') {
             curl_setopt($this->ch, CURLOPT_URL, $this->make_url($url));
             $data = curl_exec($this->ch);
             return $this->process_result($data);

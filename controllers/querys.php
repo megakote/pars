@@ -6,7 +6,7 @@ namespace controllers {
 	use \models\dataforparse\yandex as yandex;
 
 	class querys extends system{		
-		protected $title = 'Работа со списком запросов';
+		protected $title = 'Работа со списком запросов1';
 		protected $scripts = ['jquery-1.11.3.min', 'common'];
 		protected $js_vars = [];
 		protected $ajax = false;

@@ -1,5 +1,5 @@
 # Turn on URL rewriting
-RewriteEngine On 
+RewriteEngine On
 
 # Installation directory
 RewriteBase /
@@ -11,3 +11,4 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule .* index.php?q=$0
 
 AddDefaultCharset UTF-8
+

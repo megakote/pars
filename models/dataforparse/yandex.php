@@ -11,16 +11,15 @@ namespace models\dataforparse {
 
 		function __construct(){            
             $this->c = curl::app('https://yandex.ru/search')->config_load('trip.cfg');
-                             
 		}
 
-        /**
-         * Получаем выдачу с яндекса по запросу $query в количестве $pages страниц
-         * @param string $query
-         * @param int $pages
-         * @return string
-         */
-        public function GetContent($query, $pages=10){
+		/**
+		* Получаем выдачу с яндекса по запросу $query в количестве $pages страниц
+		* @param string $query
+		* @param int $pages
+		* @return string
+		*/
+    public function GetContent($query, $pages=10){
 
 			if(DEBUG){
 				return file_get_contents('data/yapost.xml');

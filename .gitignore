@@ -1,3 +1,4 @@
 config.php
 data/stat.txt
 .idea/
+log/*

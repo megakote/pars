@@ -4,7 +4,7 @@
 
 
 <div class="col-xs-12">
-	<table class="table table-striped" style="width: 300px; margin: 20px auto;">
+    <table class="table table-striped" style="width: 300px; margin: 20px auto;">
  		<tbody>
  			<tr>
  				<td>Количество элементов в базе</td>

@@ -12,9 +12,9 @@
 
 	$c = '\\controllers\\';
 	$c .= isset($params[0]) ? $params[0] : 'index';
-	
-	$action = 'action_';
+
+	$action = "action_";
 	$action .= isset($params[1]) ? $params[1] : 'index';
-	
-	$conrtroller = new $c();   
+
+	$conrtroller = new $c();
 	$conrtroller->request($action, $params);
