@@ -8,7 +8,7 @@ namespace controllers {
 	use \models\analizator as analizator;
 
 	class siteparser extends system{
-		protected $title = 'Парсим список url\'ов';
+		protected $title = 'Парсим url\'ы';
 		protected $scripts = ['jquery-1.11.3.min', 'common'];
 		protected $js_vars = [];
 		protected $ajax = false;
@@ -43,10 +43,8 @@ namespace controllers {
 								$c = new curl($url);
 								$c->follow(true);
 								$data = $c->request("/");
-								$anal = new analizator($data['html']);
-								$info = $anal->getData();
-								$this->data[] = $info;
-
+								$anal = new analizator($data);
+								$this->data = $anal->getData();
 						}
 
 						v($this->data);

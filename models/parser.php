@@ -3,8 +3,8 @@
 namespace models{
     class parser {
 
-        private $cur;
-        private $str;
+        public $cur;
+        public $str;
 
         public static function app($str) {
             return new self($str);
