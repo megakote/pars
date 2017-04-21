@@ -17,7 +17,7 @@ namespace models{
 				* @param array $data
 				*/
 				public function __construct($data){
-						$this->header = new parser($data['header']);
+						$this->header = new parser($data['headers']);
     				$this->content = new parser($data['html']);
 
     				$methods = get_class_methods($this);
@@ -36,14 +36,20 @@ namespace models{
 						$body = $this->content;
 						$body->def();
 						while (true){
-								if ($body->moveTo("mailto:") == -1)
+								$cur = $body->moveAfter('mailto:');
+								if ($cur === -1) {
 										break;
-								$email = $body->readTo("'");
+								}
+								//Выбираем какой символ встречается раньше.
+								$pos = min($body->getPos('\''),$body->getPos('"'));
+								$email = $body->readToPos($pos);
 								if ($email == -1){
-										$email = $body->readTo("\"");
+										$email = $body->readTo('"');
 								}
 								$emails[] = $email;
 						}
+						v($emails);
+						die();
 						$pattern = "/(?:[A-Za-z0-9!#$%&'*+=?^_`{|}~-]+(?:\.[A-Za-z0-9!#$%&'*+=?^_`{|}~-]+)*|\"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*\")@(?:(?:[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?\.)+[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[A-Za-z0-9-]*[A-Za-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/";
 						//$pattern = "^([a-z0-9_\.-]+)@([a-z0-9_\.-]+)\.([a-z\.]{2,6})$";
 
