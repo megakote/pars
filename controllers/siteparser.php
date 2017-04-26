@@ -12,7 +12,11 @@ namespace controllers {
 		protected $scripts = ['jquery-1.11.3.min', 'common'];
 		protected $js_vars = [];
 		protected $ajax = false;
-		protected $data = []; //Вся собранная информация
+		protected $data = [/*
+ 				$url => [
+ 					$info => [val1,val2...]
+ 				]
+ 		*/]; //Вся собранная информация
 		private $stat;
 		private $process_name = 'siteparser';
 		public $i = 0;
@@ -23,6 +27,7 @@ namespace controllers {
 		}
 
 		public function action_index(){
+				echo 'index';
 			//Проверяем запущен ли процесс парсинга
 			if ($this->stat->isWorked()) {
 				header("HTTP/1.1 301 Moved Permanently"); 
@@ -44,11 +49,11 @@ namespace controllers {
 								$c->follow(true);
 								$data = $c->request("/");
 								$anal = new analizator($data);
-								$this->data = $anal->getData();
+								$this->data[$url] = $anal->getData();
 						}
 
 						v($this->data);
-						die('the end');
+						die("\nthe end\n");
 				}
 		}
 		protected function render($action){

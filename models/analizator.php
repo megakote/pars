@@ -8,8 +8,8 @@ namespace models{
     		protected $header;	// header страницы.
     		protected $content; // body страницы.
     		protected $data = [/*
-    				'emails' => ['xxx@ya.ru','yyy@ya.ru'],
- 						'phones' => ['8-999-666-11-11','8-999-222-11-11']
+    				'email' => [],
+ 						'phone' => []
 				*/];
 
 				/**
@@ -32,7 +32,6 @@ namespace models{
 				private function getPhone(){}
 
 				private function getEmail(){
-						$emails = [];
 						$body = $this->content;
 						$body->def();
 						while (true){
@@ -46,30 +45,24 @@ namespace models{
 								if ($email == -1){
 										$email = $body->readTo('"');
 								}
-								$emails[] = $email;
+								$this->data['email'][] = $email;
 						}
-						v($emails);
-						die();
-						$pattern = "/(?:[A-Za-z0-9!#$%&'*+=?^_`{|}~-]+(?:\.[A-Za-z0-9!#$%&'*+=?^_`{|}~-]+)*|\"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*\")@(?:(?:[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?\.)+[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[A-Za-z0-9-]*[A-Za-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/";
-						//$pattern = "^([a-z0-9_\.-]+)@([a-z0-9_\.-]+)\.([a-z\.]{2,6})$";
 
-						$text = $body->str;
-						//filter_var($text, FILTER_VALIDATE_EMAIL)
-						preg_match_all($pattern, $text, $result);
-						$r = array_unique(array_map(function ($i) { return $i; }, $result));
-						array_walk_recursive($r, function ($item, $key) {
-								$this->data['email'][] = $item;
-						});
+						$pattern = "/\b([a-z0-9._-]+@[a-z0-9.-]+)\b/i";
+						preg_match_all($pattern, trim($body->str), $matches);
+						foreach($matches[0] as $key => $val) {
+								$email = filter_var($val, FILTER_VALIDATE_EMAIL);
+								if($email) {
+										$this->data['email'][] = $email;
+								}
+						}
 				}
 
 				/**
-				 * Обрабатывает все что есть в $this->data;
+				 * Получаем всю собранную инфу.
+				 * @return array
 				 */
-				private function validateData(){
-
-				}
 				public function getData(){
-						$this->validateData();
 						return $this->data;
 				}
 		}
