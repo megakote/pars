@@ -33,14 +33,14 @@ namespace controllers {
 				$c = new yandex();
 				while (true) {
 					$i = 0;
-					$query = $this->db->GetQuerys(5);
+					$querys = $this->db->GetQuerys(5);
 
-					if (count($query) == 0) {
+					if (count($querys) == 0) {
 						$this->stat->setData('error', 'Кончились поисковые фразы');
 						break;
 					}
 
-					foreach ($query as $key => $query) {
+					foreach ($querys as $key => $query) {
 						$data = $c->GetContent($query,2);
 						$p = parser::app($data);
 						$urls = [];
@@ -53,7 +53,8 @@ namespace controllers {
 							$hash = make_hash($data['host']);
 							$urls = [
 									'url'		=> $data['host'], 
-									'protocol'	=> $data['scheme'], 
+									'protocol'	=> $data['scheme'],
+									'froms'		=> 'yandex',
 									'q_id'		=> $key,
 									'hash' 		=> $hash
 								];
